@@ -1,0 +1,201 @@
+body{
+  background-image: url("../Imagenes/Netflix-Background.jpg");
+  width: 100%;
+}
+
+#titulo{
+
+  text-decoration: underline;
+  color:white;
+  font-size: 40px;
+  margin: 0px 0px 6px;
+  margin-left: 37%;
+}
+/*//////  HEADER //////
+/////////                ////*/
+header{
+  overflow: hidden;
+  width: 90%;
+}
+header img{
+  float: left;
+}
+header button{
+  float: right;
+}
+header div button{
+  float: left;
+}
+
+/* BARRA MENU */
+
+.form-inline{
+  /* flex-flow: row; */
+  float: right;
+}
+/* SOLUCION para tener el menu y la barra de navegacion en linea */
+nav{
+  float:left;
+}
+
+
+/*//////               //////
+/////////                ////*/
+div.all{
+  display: block;
+}
+
+p{
+  color:white;
+}
+.btn.btn-danger.dropdown-toggle{
+  margin: 1px 1px 1px;
+  margin-bottom: 2px;
+}
+.btn.btn-danger.dropdown-toggle:after{
+  content: " + ";
+}
+
+a{
+  color:white;
+}
+div.dropdown-menu{
+  background-color: grey;
+  color:white;
+}
+
+
+
+
+
+/*////////               //////
+//////  INICIO DEL ALTA //////
+/////////                ////*/
+#alta{
+  width: 80%;
+  margin-left: 30%;
+}
+
+#imagen-tit{
+  margin-left: 2%;
+}
+
+#botonarchivo{
+  background-color: #EFF7F5;
+  margin-left: 6%;
+}
+
+.h1titulo{
+
+  max-width:60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-left: 22%;
+}
+h1{
+  font-family: 'Muli', sans-serif;
+  color: #000;
+  font-weight: bold;
+  color: red;
+  font-size: 60px;
+  text-shadow: 2px 2px 1px #000;
+}
+section p{
+  /* margin-left:8%; */
+  text-align: left;
+  color:white;
+  font-size: 2rem;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #404040;
+}
+#tituloPost{
+  margin-left: 14%;
+}
+#tituloPelicula{
+  margin-left: 6%;
+}
+#inputTitulo{
+  width: 40%;
+  margin-left: 6%;
+
+}
+
+/* DESCRIPCION DEL POST */
+#descripcion-tit{
+  margin-left: 15%;
+}
+
+textarea{
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+}
+/*  //////////////////////////////////////  */
+
+.form-control {
+    display: block;
+    width: 70%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*////////               //////
+//////  PUNTUACION //////
+/////////                ////*/
+#puntuacion-tit{
+  margin-left: 5%;
+}
+
+#box-puntuacion{
+  /* overflow: hidden; */
+}
+#box-puntuacion select{
+  /* float: left; */
+}
+#box-puntuacion p{
+  /* float: left; */
+  /* margin: 5px; */
+}
+
+/* BOTON SELECT PUNTUACION */
+#puntuacion{
+  width: 25%;
+  height: 20%;
+  margin-left: 12%;
+}
+
+
+/*////////               //////
+//////  BOTONES //////
+/////////                ////*/
+#boton{
+  background-color: #EFF7F5;
+}
+
+button#boton.btn.btn-outline-success {
+color:#dc3545;
+border-color: #dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+}
+
+button#boton.btn.btn-outline-success:hover {
+color: white;
+border-color:#dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+background-color: #dc3545;
+}
+
+#botoncoment{
+  background-color: #EFF7F5;
+}

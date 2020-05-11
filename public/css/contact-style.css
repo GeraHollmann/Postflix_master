@@ -1,0 +1,137 @@
+/*////////               //////
+////// ACA ESTAN LAS FONTS //////
+/////////                ////*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/*////////               //////
+//////  FONDO DE PANTALLA //////
+/////////                ////*/
+body{
+  background-image: url("../Imagenes/Netflix-Background.jpg");
+  width: 100%;
+  margin: 0 auto;
+}
+/*////////               //////
+//////  INICIO DEL HEADER! //////
+/////////                ////*/
+
+
+/*//////  HEADER //////
+/////////                ////*/
+header{
+  overflow: hidden;
+  width: 100%;
+}
+header img{
+  float: left;
+}
+header button{
+  float: right;
+}
+header div button{
+  float: left;
+}
+
+/* BARRA MENU */
+
+.form-inline{
+  /* flex-flow: row; */
+  float: right;
+}
+/* SOLUCION para tener el menu y la barra de navegacion en linea */
+nav{
+  float:left;
+}
+
+
+
+/*////////               //////
+//////  BOTONES //////
+/////////                ////*/
+#boton{
+  background-color: #EFF7F5;
+}
+
+button#boton.btn.btn-outline-success {
+color:#dc3545;
+border-color: #dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+}
+
+button#boton.btn.btn-outline-success:hover {
+color: white;
+border-color:#dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+background-color: #dc3545;
+}
+
+#botoncoment{
+  background-color: #EFF7F5;
+}
+/*////////               //////
+//////  INICIO DEL CONTACTO //////
+/////////                ////*/
+
+
+.h1titulo{
+
+  max-width: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+h1{
+  font-family: 'Muli', sans-serif;
+  color: #000;
+  font-weight: bold;
+  color: red;
+  font-size: 60px;
+  text-shadow: 2px 2px 1px #000;
+}
+section p{
+  margin-left:8%;
+  text-align: left;
+  color:white;
+  font-size: 2rem;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #404040;
+}
+section input{
+  margin-left:8%;
+}
+#form{
+  width: 90%;
+  /* margin-left: 20%; */
+}
+#textarea{
+  margin-left:8%;
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  margin: none;
+}
+
+
+input{
+  width: 50%;
+}
+.form-control {
+    display: block;
+    width: 50%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#botoncoment{
+  margin-left:8%;
+  background-color: #EFF7F5;
+}

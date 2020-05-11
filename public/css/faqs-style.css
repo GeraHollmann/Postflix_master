@@ -1,0 +1,69 @@
+body{
+  width: 100%;
+  background-color: #303030;
+}
+div.header{
+  display: flex;
+}
+img.logo{
+  margin-left: 12%;
+  margin-top: 12%;
+}
+h3{
+
+  text-decoration: underline;
+  color:black;
+  font-size: 40px;
+  margin-left: 30%;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+/* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+
+p{
+  color:white;
+}
+.btn.btn-danger.dropdown-toggle{
+  margin: 1px 1px 1px;
+  margin-bottom: 2px;
+}
+.btn.btn-danger.dropdown-toggle:after{
+  content: " + ";
+}
+/* Menu de botones a la izquierda */
+.form-inline{
+  margin-left: 35%;
+}
+div.menu{
+  margin-left: 30%;
+justify-content: center;
+  width: 25%;
+  display: inline-grid;
+}
+a{
+color: #bd2130;
+}
+
+div.dropdown-menu{
+
+  background-color: grey;
+  color:white;
+}
+.dropdown-menu{
+
+  display: inline-grid;
+}
+
+button#boton.btn.btn-outline-success {
+color:#dc3545;
+border-color: #dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+}
+button#boton.btn.btn-outline-success:hover {
+color: white;
+border-color:#dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+background-color: #dc3545;
+}
