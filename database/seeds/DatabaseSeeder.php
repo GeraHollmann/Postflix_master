@@ -13,17 +13,17 @@ class DatabaseSeeder extends Seeder
     {
 
       //SEEDERS(modificadores de DB)
-
+        $this->call(SeederCrearAdmin::class);
        //$this->call(SeederCrearUsuario::class);
        //$this->call(SeederEliminarUsuario::class);
        //$this->call(SeederModificarUsuario::class);
 
        //FACTORIES(crear datos en DB fakes)
 
-       factory(App\User::class, 5)->create();
-       factory(App\Post_category::class, 5)->create();
-       factory(App\Post::class, 5)->create();
-       factory(App\Contact::class, 5)->create();
+       //factory(App\User::class, 5)->create();
+       //factory(App\Post_category::class, 5)->create();
+       //factory(App\Post::class, 5)->create();
+       //factory(App\Contact::class, 5)->create();
 
     }
 }
