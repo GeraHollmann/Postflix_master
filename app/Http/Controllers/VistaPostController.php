@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Post_category;
+
 
 class VistaPostController extends Controller
 {
@@ -17,7 +19,8 @@ class VistaPostController extends Controller
     }
 
 
+
   public function editarPost(){
-    
+
   }
 }
