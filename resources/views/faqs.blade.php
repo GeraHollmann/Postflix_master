@@ -14,7 +14,7 @@
         <a title="PointFlix" href="./index.php">
           <img class="logo" src="logo.png" alt="Postflix">
         </a>
-
+{{-- <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button> --}}
       </nav>
       <!-- BARRA DE NAVEGACION -->
       <form class="form-inline"   "col-lg-4 col-xs-12">
