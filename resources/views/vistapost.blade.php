@@ -92,7 +92,7 @@
                         <div id="divflotante" class="flotar"><h2 id="titulos">Puntuación:</h2></div>
                         <div class="flotar"><p class="puntua">{{$post->rating}}</p></div>
                         <div id="divflotante" class="flotar"><h2 id="titulos">Categoria:</h2></div>
-                        <div class="flotar"><p>{{$post->post_categories}}</p></div>
+                        <div class="flotar"><p>{{$post->post_categories_id}}</p></div> <!--SOLO ME TRAE EL ID-->
                     </div><!-- /.col-lg-4 -->
                 @empty
                     <h2>No se encontraron Posteos</h2>

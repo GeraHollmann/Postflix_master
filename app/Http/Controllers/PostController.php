@@ -24,7 +24,7 @@ class PostController extends Controller
 
         $nuevoPost->description = $req['description'];
         $nuevoPost->rating = $req['rating'];
-        $nuevoPost->users_id = $req['users_id']; /*COMO PONER EL ID DEL USUARIO QUE ESTA CREANDO EL POST?*/
+        $nuevoPost->users_id = $req['users_id'];
         $nuevoPost->post_categories_id = $req['post_categories_id'];
 
         $nuevoPost->save();
