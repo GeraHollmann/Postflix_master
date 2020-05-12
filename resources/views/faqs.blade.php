@@ -48,7 +48,7 @@
   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     ¿Que es Postflix?
   </button>
-  <div class="dropdown-menu" style="max-width: 300px;">
+  <div class="dropdown-menu">
     <p>Postflix es una red social que ofrece la posibilidad de recomendar tus series o peliculas favoritas a tus amigos.</p>
   </div>
 </div>
@@ -57,7 +57,7 @@
   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   ¿Como me registro?
   </button>
-  <div class="dropdown-menu" style="max-width:300px">
+  <div class="dropdown-menu">
     Para registrarse en Postflix es muy simple, hace <strong> <a href="registro.php"> click aqui</a></strong>
     y completa el formulario para poder puntuar
      tus peliculas o series favoritas!
