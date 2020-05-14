@@ -10,4 +10,12 @@ class Post_category extends Model
   //protected $timestamps = true;
   //protected $primaryKey = 'id';
   protected $guarded = [];
+
+
+/*// RELACION DE 1 A N
+  public function posts(){
+    return $this->hasMany('App\Post');
+  }*/
+
+
 }
