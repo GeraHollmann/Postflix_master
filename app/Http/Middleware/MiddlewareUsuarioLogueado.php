@@ -16,11 +16,13 @@ class MiddlewareUsuarioLogueado
      */
     public function handle($request, Closure $next)
     {
-      if (App\User::find('role') == 'user') {
+      if (User::find('role') == 'user') {
         return $next($request);
       }else{
+        ?> <script src="alert.js"></script> <?php
         return redirect('/login');
       }
 
     }
 }
+?>

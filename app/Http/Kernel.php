@@ -35,7 +35,6 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            /*\Illuminate\Routing\Middleware\MiddlewareUsuarioLogueado::class,*/
 
         ],
 
@@ -63,7 +62,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'MiddlewareUsuarioLogueado' => \App\Http\Middleware\MiddlewareUsuarioLogueado::class,
-        'MiddlewareUsuarioLogueado' => \Illuminate\Routing\Middleware\MiddlewareUsuarioLogueado::class,
+
     ];
 
     /**

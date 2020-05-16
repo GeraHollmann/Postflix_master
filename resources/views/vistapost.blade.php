@@ -91,6 +91,7 @@
                         <p>{{ $post->description}}</p>
                         <div id="divflotante" class="flotar"><h2 id="titulos">Puntuación:</h2></div>
                         <div class="flotar"><p class="puntua">{{$post->rating}}</p></div>
+                        <br>
                         <div id="divflotante" class="flotar"><h2 id="titulos">Categoria:</h2></div>
                         <div class="flotar"><p>{{$post->category->category_name}}</p></div> <!--SOLO ME TRAE EL ID-->
                     </div><!-- /.col-lg-4 -->

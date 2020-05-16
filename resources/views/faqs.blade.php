@@ -28,10 +28,6 @@
         <a title="Boton Registro" href="./register">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
         </a>
-        <a title="Boton Mis Posts" href="./vistapost">
-          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
-        </a>
-
         <a title="Boton Contacto" href="./contacto">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Contacto </button>
         </a>

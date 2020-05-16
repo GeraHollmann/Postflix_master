@@ -15,18 +15,16 @@ class DatabaseSeeder extends Seeder
       //SEEDERS(modificadores de DB)
 
       // DESCOMENTAR EL ADMIN PRIMERO PARA GENERARLO EN EL ID 1
-      //$this->call(SeederCrearAdmin::class);
-
-
+       $this->call(SeederCrearAdmin::class);
        //$this->call(SeederCrearUsuario::class);
        //$this->call(SeederEliminarUsuario::class);
        //$this->call(SeederModificarUsuario::class);
+       $this->call(SeederCategoriasPost::class);
 
        //AGREGAR DATOS CON FACTORIES(crear datos en DB fakes) DESCOMENTAR LOS 4
-        //factory(App\User::class, 5)->create();
-        //factory(App\Post_category::class, 5)->create();
-        //factory(App\Post::class, 5)->create();
-        //factory(App\Contact::class, 5)->create();
+        factory(App\User::class, 5)->create();
+        factory(App\Post::class, 5)->create();
+        factory(App\Contact::class, 5)->create();
 
 
 
