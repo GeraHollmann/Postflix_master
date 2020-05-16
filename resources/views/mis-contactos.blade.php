@@ -60,12 +60,12 @@
 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./faqs.php">
+            <a class="nav-link" href="./faqs">
               F.A.Q
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contacto.php">
+            <a class="nav-link" href="./contacto">
               Contact us
             </a>
           </li>

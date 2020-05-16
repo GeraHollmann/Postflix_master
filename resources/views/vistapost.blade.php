@@ -29,7 +29,7 @@
                     <a class="nav-link active" href="./index.php"><span class="sr-only"></span>Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./perfil">Perfi</a>
+                    <a class="nav-link" href="./perfil">Perfil</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./contacto">Contactanos</a>
@@ -83,7 +83,7 @@
                 @forelse($losPosts as $post)
                     <div id="unPost" class="col-lg-4">
                         {{-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"></svg> --}}
-                        <div class="">
+                        <div class="container">
                           <img id=imagePost src="{{$post->image}}" alt="">
                         </div>
                         <h3 id="titulos">Pelicula/Serie:</h3><p>{{ $post->title_movie  }}</p>

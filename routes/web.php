@@ -44,14 +44,14 @@ Route::post("/contacto", "ContactoController@contactanos"); //cambiar metodo Con
 
 Route::get("/mis-contactos", function(){
   return view("mis-contactos");
-});
+})/*->middleware('MiddlewareUsuarioLogueado')*/;
 Route::post("/mis-contactos", "AmigosController@amigos"); //verificar si tiene un controller
 Route::post("/mis-contactos/agregar", "AmigosController@agregar");
 Route::post("/mis-contactos/borrar", "AmigosController@borrar");
 
 Route::get("/perfil", function(){
   return view("perfil");
-});
+})/*->middleware('MiddlewareUsuarioLogueado')*/;
 Route::post("/perfil", "PerfilController@pelis");
 Route::post("/perfil/agregar", "PerfilController@agregarPelis");
 Route::post("/perfil/borrar", "PerfilController@borrarPelis");
@@ -59,7 +59,7 @@ Route::post("/perfil/editar", "PerfilController@editarPelis");
 
 Route::get("/vistapost", function(){
   return view("vistapost");
-});
+})/*->middleware('MiddlewareUsuarioLogueado')*/;
 route::get("/vistapost", "VistaPostController@listaPost");
 Route::post("/vistapost", "VistaPostController@interactuar");
 Route::post("/vistapost/calificacion", "VistaPostController@calificar");
