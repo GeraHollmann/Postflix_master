@@ -40,7 +40,7 @@ Route::get("/faqs", function(){
 Route::get("/contacto", function(){
   return view("contacto");
 });
-Route::post("/contacto", "ContactoController@contactanos"); //cambiar metodo Controller
+Route::post("/contacto", "ContactoController@contacto"); 
 
 Route::get("/mis-contactos", function(){
   return view("mis-contactos");

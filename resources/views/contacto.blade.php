@@ -43,18 +43,19 @@
         </div>
         <br>
 
-        <form id="form" class="form-signin rounded-pill" method="POST">
+        <form id="form" class="form-signin rounded-pill" method="post" enctype="multipart/form-data">
+          {{csrf_field()}} <!--SIEMPRE DEBE ESTAR DENTRO DEL FORMULARIO-->
           <p>Nombre*</p>
-          <input type="text" id="inputNombre" class="form-control" placeholder="Ingrese su Nombre" required autofocus="">
+          <input type="text" id="inputNombre" name="first_name"class="form-control" placeholder="Ingrese su Nombre" required autofocus="">
 
           <p>Apellido*</p>
-          <input type="text" id="inputNombre" class="form-control" placeholder="Ingrese su Apellido" required>
+          <input type="text" id="inputNombre" name="last_name" class="form-control" placeholder="Ingrese su Apellido" required>
 
           <p>E-mail*</p>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Correo electronico" required autofocus="">
+          <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Correo electronico" required autofocus="">
 
           <p>Dejanos tu comentario</p>
-          <textarea id="textarea" placeholder="Escribe aqui tu comentario para contactar contigo..." name="message" rows="8" cols="67"  ></textarea>
+          <textarea id="textarea" placeholder="Escribe aqui tu comentario para contactar contigo..." name="comment" rows="8" cols="67"  ></textarea>
           <br>
           <button id="botoncoment" class="btn" type="submit" >Enviar Comentario</button>
           <br><br>
@@ -62,6 +63,6 @@
 
       </section>
     </div>
-    
+
   </body>
 </html>
