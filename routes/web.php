@@ -51,9 +51,9 @@ Route::post("/mis-contactos/borrar", "AmigosController@borrar");
 
 Route::get("/perfil", function(){
   return view("perfil");
-})->middleware('MiddlewareUsuarioLogueado');
+});
 
-Route::post("/perfil", "PerfilController@pelis")->middleware('MiddlewareUsuarioLogueado');
+Route::post("/perfil", "PerfilController@pelis");
 Route::post("/perfil/agregar", "PerfilController@agregarPelis");
 Route::post("/perfil/borrar", "PerfilController@borrarPelis");
 Route::post("/perfil/editar", "PerfilController@editarPelis");
