@@ -40,7 +40,7 @@ Route::get("/faqs", function(){
 Route::get("/contacto", function(){
   return view("contacto");
 });
-Route::post("/contacto", "ContactoController@contacto"); 
+Route::post("/contacto", "ContactoController@contacto");
 
 Route::get("/mis-contactos", function(){
   return view("mis-contactos");
@@ -53,7 +53,7 @@ Route::get("/perfil", function(){
   return view("perfil");
 })->middleware('MiddlewareUsuarioLogueado');
 
-Route::post("/perfil", "PerfilController@pelis");
+Route::post("/perfil", "PerfilController@pelis")->middleware('MiddlewareUsuarioLogueado');
 Route::post("/perfil/agregar", "PerfilController@agregarPelis");
 Route::post("/perfil/borrar", "PerfilController@borrarPelis");
 Route::post("/perfil/editar", "PerfilController@editarPelis");
