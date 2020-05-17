@@ -40,7 +40,7 @@ Route::get("/faqs", function(){
 Route::get("/contacto", function(){
   return view("contacto");
 });
-Route::post("/contacto", "ContactoController@contacto"); 
+Route::post("/contacto", "ContactoController@contacto");
 
 Route::get("/mis-contactos", function(){
   return view("mis-contactos");
@@ -66,9 +66,7 @@ Route::post("/vistapost", "VistaPostController@interactuar");
 Route::post("/vistapost/calificacion", "VistaPostController@calificar");
 Route::post("/vistapost/comentar", "VistaPostController@comentar");
 
-Route::get("/altaPost", function(){
-  return view("altaPost");
-})->middleware('MiddlewareUsuarioLogueado');
-Route::post("altaPost", "PostController@alta");
+Route::get("/altaPost", "PostController@listaCategoria");/*->middleware('MiddlewareUsuarioLogueado');*/
+Route::post("/altaPost", "PostController@alta");
 
 Auth::routes();

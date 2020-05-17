@@ -1,18 +1,23 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Post_category;
 
 class PostController extends Controller
 {
+
+    public function listaCategoria(){
+        $lasCategorias = Post_category::all(); //Trae todos los datos de la tabla categorias
+        $vac = compact('lasCategorias');
+        return view("altaPost",$vac);
+    }
+
     public function alta(Request $req){
 
 
         // AGREGAR VALIDACIONES ACA!
-
-
         $nuevoPost = new Post();
 
         $nuevoPost->title_post = $req['title_post'];
@@ -25,10 +30,11 @@ class PostController extends Controller
         $nuevoPost->description = $req['description'];
         $nuevoPost->rating = $req['rating'];
         $nuevoPost->users_id = $req['users_id'];
-        $nuevoPost->post_categories_id = $req['post_categories_id'];
+        $nuevoPost->post_categories_id = $req['category'];
 
         $nuevoPost->save();
         return redirect('/perfil');
+
     }
 
 

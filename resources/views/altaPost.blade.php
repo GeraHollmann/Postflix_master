@@ -59,7 +59,23 @@
             <option >5</option><option >6</option><option >7</option><option >8</option>
             <option >9</option><option >10</option>
           </select>
+
+
+
           {{-- AGREGAR SELECT DE CATEGORIAS --}}
+          <select id="puntuacion" class="form-control" name="category">
+            <option >Elija una categoria</option>
+            <option >
+              @forelse ($lasCategorias as $categorias => $value)
+                {{$categorias}}
+              @empty
+                <h2>No se encontraron Categorias</h2>
+              @endforelse
+            </option>
+          </select>
+
+
+
         </div>
         <br>
 
