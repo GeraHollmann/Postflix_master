@@ -65,7 +65,10 @@
       <div id="middletitle" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 
         @section('nombreUsuario')
-          <h1 class="h2"><?php return getNombreCompleto() ?></h1>
+          <h1 class="h2">Bienvenido .
+          {{auth()->user()->first_name}} . 
+          {{auth()->user()->last_name}}
+        </h1>
         @endsection
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">

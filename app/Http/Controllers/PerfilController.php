@@ -16,7 +16,7 @@ class PerfilController extends Controller
   // }
 
   public function Usuarios(){
-        $Usuarios = User::all(); //Trae todos los datos de la tabla User
+        $Usuarios = User::find('id'); //Trae todos los datos de la tabla User
         $vac = compact('Usuarios');
         return view('perfil', $vac);
     }
