@@ -5,10 +5,11 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Post_category;
 
+
 class PostController extends Controller
 {
 
-    public function listaCategoria(){
+    public function selectCategoria(){
         $lasCategorias = Post_category::all(); //Trae todos los datos de la tabla categorias
         $vac = compact('lasCategorias');
         return view("altaPost",$vac);
