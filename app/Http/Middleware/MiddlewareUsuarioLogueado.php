@@ -20,7 +20,7 @@ class MiddlewareUsuarioLogueado
       if (User::find('role') == 'user') {
         return $next($request);
       }else{
-        ?> <script src="alert.js"></script> <?php
+      
         return redirect('/login');
       }
 

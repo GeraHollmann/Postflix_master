@@ -72,7 +72,7 @@
 
 <div class="btn-group dropleft">
   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  ¿Como me contacto con algun representante de Postflix ?
+  ¿Como me contacto con algun representante oficial?
   </button>
   <div class="dropdown-menu" >
     Si tenes alguna otra inquietud o algun problema en particular podes contactarte con nosotros debe este <strong> <a href="contacto.php">link</a> </strong></div>
