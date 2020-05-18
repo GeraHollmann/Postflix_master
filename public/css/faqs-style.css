@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 body{
   width: 100%;
   background-image: url("../Imagenes/Netflix-Background.jpg");
@@ -9,22 +11,22 @@ img.logo{
   margin-left: 12%;
   margin-top: 12%;
 }
-h3{
-
-  text-decoration: underline;
-  color:white;
-
-  background-color: black;
-  font-size: 40px;
-text-align: center;
-opacity: 50%;
-  padding-bottom: 32px;
-  padding-top: 32px;
+.h3titulo{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  max-width: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
-/* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
-
+h3{
+  font-family: 'Muli', sans-serif;
+  color: #000;
+  font-weight: bold;
+  color: red;
+  font-size: 60px;
+  text-shadow: 2px 2px 1px #000;
+}
 p{
-
   color:white;
 }
 .btn.btn-danger.dropdown-toggle{

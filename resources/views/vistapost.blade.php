@@ -35,7 +35,7 @@
                     <a class="nav-link" href="./contacto">Contactanos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./faqs">Preguntas frecuentes</a>
+                    <a class="nav-link" href="./faqs">FAQS</a>
                   </li>
                 </ul>
 

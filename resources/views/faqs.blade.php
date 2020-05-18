@@ -35,9 +35,11 @@
 </div>
 
 <body>
-
-        <h3>Preguntas Frecuentes</h3>
-
+  <div class="h3titulo rounded-pill">
+    <br>
+    <h3>Preguntas Frecuentes</h3>
+    <br>
+  </div>
 <div class="menu">
 
           <div class="btn-group dropright">

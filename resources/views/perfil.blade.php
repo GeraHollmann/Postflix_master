@@ -11,11 +11,6 @@
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="./css/perfil-style.css">
 
-    <style>
-
-    </style>
-
-    <!-- Custom styles for this template -->
 
   <style type="text/css">/* Chart.js */
 /* @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;} */
@@ -76,8 +71,12 @@
           </div>
         </div>
       </div>
-        <h2 id="minititle">Mis Posteos</h2>
-      <div class="album py-5 bg-light">
+      <div class="h3titulo rounded-pill">
+
+        <h3> Mis Posteos</h3>
+        <br>
+      </div>
+
     <div class="container">
 
       <div class="row">
@@ -88,9 +87,9 @@
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
-                  <input id="eliminarPost" type="reset" class="btn btn-sm btn-outline-secondary" name="eliminar" value="Eliminar Post">
+                  <button type="button" class="btn btn-sm btn-outline-success">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                  <input id="eliminarPost" type="reset" class="btn btn-sm btn-outline-success" name="eliminar" value="Eliminar Post">
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>

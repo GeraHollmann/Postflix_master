@@ -51,7 +51,9 @@ Route::post("/mis-contactos/borrar", "AmigosController@borrar");
 
 Route::get("/perfil", function(){
   return view("perfil");
-})->middleware('MiddlewareUsuarioLogueado');
+});
+// ->middleware('MiddlewareUsuarioLogueado')
+//Comente el middleware de perfil para poder cambiarle el CSS 
 
 Route::post("/perfil", "PerfilController@pelis");
 Route::post("/perfil/agregar", "PerfilController@agregarPelis");
