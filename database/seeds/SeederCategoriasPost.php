@@ -16,6 +16,10 @@ class SeederCategoriasPost extends Seeder
 
       ]);
       DB::table('post_categories')->insert([
+        'category_name' => 'Animada',
+
+      ]);
+      DB::table('post_categories')->insert([
         'category_name' => 'Comedia',
 
       ]);

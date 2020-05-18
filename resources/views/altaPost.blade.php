@@ -36,7 +36,7 @@
     </header>
     <br><br>
     <h1 id=titulo>Creando Nuevo Post!</h1>
-    <br><br>
+    <br>
     <section class="container">
       <form id="alta" class="form-signin rounded-pill col-8 col-md-8 col-lg-12" action="/altaPost" method="post" enctype="multipart/form-data">
         {{csrf_field()}} <!--SIEMPRE DEBE ESTAR DENTRO DEL FORMULARIO-->
@@ -59,26 +59,22 @@
             <option >5</option><option >6</option><option >7</option><option >8</option>
             <option >9</option><option >10</option>
           </select>
-
-
-
-          {{-- AGREGAR SELECT DE CATEGORIAS --}}
-          <select id="puntuacion" class="form-control" name="category">
+        </div>
+        {{-- AGREGAR SELECT DE CATEGORIAS --}}
+        <div id="box-puntuacion">
+          <p id="puntuacion-tit">Seleccione una categoria</p>
+          <select id="categorias" class="form-control" name="category">
             <option >Elija una categoria</option>
-            <option >
-              @forelse ($lasCategorias as $categorias => $value)
-                {{$categorias}}
+              @forelse ($lasCategorias as $categorias)
+                <option >
+                {{$categorias->category_name}}
               @empty
                 <h2>No se encontraron Categorias</h2>
+                </option>
               @endforelse
-            </option>
           </select>
-
-
-
         </div>
-        <br>
-
+        <br><br>
         <button id="botoncoment" class="btn" type="submit" >Publicar Post</button>
         <br><br>
       </form>
