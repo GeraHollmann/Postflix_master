@@ -53,8 +53,9 @@ Route::get("/perfil", function(){
   return view("perfil");
 });
 // ->middleware('MiddlewareUsuarioLogueado')
-//Comente el middleware de perfil para poder cambiarle el CSS 
+//Comente el middleware de perfil para poder cambiarle el CSS
 
+Route::post("/perfil", "PerfilController@Usuarios");
 Route::post("/perfil", "PerfilController@pelis");
 Route::post("/perfil/agregar", "PerfilController@agregarPelis");
 Route::post("/perfil/borrar", "PerfilController@borrarPelis");
