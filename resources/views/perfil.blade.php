@@ -63,23 +63,11 @@
 
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
       <div id="middletitle" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-
-        @section('nombreUsuario')
-          <h1 class="h2">Bienvenido .
-          {{auth()->user()->first_name}} . 
-          {{auth()->user()->last_name}}
-        </h1>
-        @endsection
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group mr-2">
-            <a class="mis-conactos" href="./mis-contactos"><button type="button" class="btn btn-sm btn-outline-secondary">Mis Contactos</button></a>
-            <a class="mis-contactos" href="./vistapost"><button type="button" class="btn btn-sm btn-outline-secondary">Posteos</button></a>
-          </div>
-        </div>
+          <h1>Bienvenido a tu perfil {{$usuario->nickname}} </h1>
       </div>
       <div class="h3titulo rounded-pill">
 
-        <h3> Mis Posteos</h3>
+        <h3>Mis Posteos</h3>
         <br>
       </div>
 

@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class PerfilController extends Controller
 {
@@ -16,12 +16,14 @@ class PerfilController extends Controller
   // }
 
   public function Usuarios(){
-        $Usuarios = User::find('id'); //Trae todos los datos de la tabla User
-        $vac = compact('Usuarios');
-        return view('perfil', $vac);
+    if (Auth::guard()->check()) {
+      $usuario = User::find(auth()->id());
+      $vac = compact('usuario');
+      return view('perfil', $vac);
+    }else{
+      return redirect('login');
     }
-    public function getNombreCompleto(){
-      $Usuarios = User::all();
-      return $Usuarios->first_name . ' ' . $Usuarios->last_name;
+
     }
+
 }

@@ -30,6 +30,15 @@
         border-color: pink;
       }
 
+h1{
+  font-family: 'Muli', sans-serif;
+  color: #000;
+  font-weight: bold;
+  color: red;
+  font-size: 35px;
+  text-shadow: 2px 2px 1px #000;
+}
+
 
 .h3titulo{
   margin-top: 2%;

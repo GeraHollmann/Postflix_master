@@ -16,11 +16,13 @@ Route::get('/', function () {
 });
 
 
-Route::get("/index", "IndexController@home");
+Route::get("/index", function () {
+    return view('index');
+});
 
 Route::get('/logout', function(){
    Auth::logout();
-   return Redirect::to('index.php');
+   return Redirect::to('index');
 });//boton para desloguear
 
 Route::get("/login", function() {
@@ -45,21 +47,19 @@ Route::post("/contacto", "ContactoController@contacto");
 Route::get("/mis-contactos", function(){
   return view("mis-contactos");
 })->middleware('MiddlewareUsuarioLogueado');
-Route::post("/mis-contactos", "AmigosController@amigos"); //verificar si tiene un controller
+Route::get("/mis-contactos", "AmigosController@amigos");
 Route::post("/mis-contactos/agregar", "AmigosController@agregar");
 Route::post("/mis-contactos/borrar", "AmigosController@borrar");
 
 Route::get("/perfil", function(){
   return view("perfil");
-});
-// ->middleware('MiddlewareUsuarioLogueado')
-//Comente el middleware de perfil para poder cambiarle el CSS
+})->middleware('MiddlewareUsuarioLogueado');
 
-Route::post("/perfil", "PerfilController@Usuarios");
+Route::get("/perfil", "PerfilController@Usuarios");
 Route::post("/perfil", "PerfilController@pelis");
-Route::post("/perfil/agregar", "PerfilController@agregarPelis");
-Route::post("/perfil/borrar", "PerfilController@borrarPelis");
-Route::post("/perfil/editar", "PerfilController@editarPelis");
+Route::post("/perfil/{id}/agregar", "PerfilController@agregarPelis");
+Route::post("/perfil/{id}/borrar", "PerfilController@borrarPelis");
+Route::post("/perfil/{id}/editar", "PerfilController@editarPelis");
 
 Route::get("/vistapost", function(){
   return view("vistapost");
