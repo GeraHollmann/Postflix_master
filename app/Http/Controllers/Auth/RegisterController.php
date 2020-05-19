@@ -75,3 +75,4 @@ class RegisterController extends Controller
         ]);
     }
 }
+//para validar en JS video herni "Repaso JavaScript" (tiempo: 2:05:20 aprox.)
