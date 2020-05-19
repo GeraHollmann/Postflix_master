@@ -15,7 +15,7 @@
         </a>
       </nav>
       <div class="form-inline  col-xs-2">
-        <a title="Boton Home" href="index.php">
+        <a title="Boton Home" href="index">
           <button class="btn btn-outline-success " style="margin:10px" id="boton" type="button"> Home </button>
         </a>
 

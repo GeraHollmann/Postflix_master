@@ -53,7 +53,7 @@
       <div class="sidebar-sticky bg-dark">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="./index.php">
+            <a class="nav-link active" href="./index">
                <span class="sr-only"></span>
                Home
             </a>
