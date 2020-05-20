@@ -11,6 +11,10 @@ body{
 }
 /*//////  HEADER //////
 /////////                ////*/
+form.form-inline{
+  flex-flow: row;
+  margin-right: 10%;
+}
 header{
   overflow: hidden;
   width: 100%;
