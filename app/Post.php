@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
   protected $table = 'posts';
-  //public $timestamps = true;
+  public $timestamps = true;
   //protected $primaryKey = 'id';
   protected $guarded = [];
 
@@ -16,4 +16,9 @@ class Post extends Model
   public function category(){
     return $this->belongsTo('App\Post_category','post_categories_id');
   }
+
+
+  public function User(){
+    return $this->hasMany('App\Post', 'users_id');
+}
 }

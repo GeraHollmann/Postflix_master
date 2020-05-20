@@ -56,8 +56,7 @@ Route::get("/perfil", function(){
 })->middleware('MiddlewareUsuarioLogueado');
 
 Route::get("/perfil", "PerfilController@Usuarios");
-Route::post("/perfil", "PerfilController@pelis");
-Route::post("/perfil/{id}/agregar", "PerfilController@agregarPelis");
+Route::get("/perfil", "PerfilController@pelis");
 Route::post("/perfil/{id}/borrar", "PerfilController@borrarPelis");
 Route::post("/perfil/{id}/editar", "PerfilController@editarPelis");
 

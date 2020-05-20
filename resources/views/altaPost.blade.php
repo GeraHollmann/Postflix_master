@@ -74,6 +74,9 @@
               @endforelse
           </select>
         </div>
+        {{-- arreglar estos dos input --}}
+        <input type="hidden" name="users_id" value="{{User::auth()->id()}}">
+        <input type="hidden" name="post_categories_id" value="{{$categorias['id'] == Post_category::find('id')}}">
         <br><br>
         <button id="botoncoment" class="btn" type="submit" >Publicar Post</button>
         <br><br>

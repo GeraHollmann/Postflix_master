@@ -18,8 +18,9 @@ margin-left: 10px;
 }
 
 #posteos{
+  width: 100%;
   background-color: white;
-  /* background-image: url("../Imagenes/Netflix-Background.jpg"); */
+/*  background-image: url("../Imagenes/fondo_perfil.jpg");*/
   margin-top: 6%;
   overflow: hidden;
 }
