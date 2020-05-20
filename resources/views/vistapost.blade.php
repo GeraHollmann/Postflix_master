@@ -33,7 +33,7 @@
               </li>
             </ul>
             <li class="nav-item">
-              <a class="nav-link" href="./index">Cerrar sesion</a>
+              <button id="search" class="btn" type="submit"><a class="btn btn-outline-success" href="./logout">Cerrar Sesion</a></button>
             </li>
           </div>
         </nav>

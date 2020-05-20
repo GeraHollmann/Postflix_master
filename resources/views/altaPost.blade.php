@@ -63,10 +63,11 @@
         {{-- AGREGAR SELECT DE CATEGORIAS --}}
         <div id="box-puntuacion">
           <p id="puntuacion-tit">Seleccione una categoria</p>
-          <select id="categorias" class="form-control" name="category">
+          <select id="categorias" class="form-control" name="categoriaElegida">
             <option >Elija una categoria</option>
               @forelse ($lasCategorias as $categorias)
-                <option >
+                <option>
+                {{$categorias->id}}:
                 {{$categorias->category_name}}
               @empty
                 <h2>No se encontraron Categorias</h2>
@@ -74,9 +75,8 @@
               @endforelse
           </select>
         </div>
-        {{-- arreglar estos dos input --}}
-        <input type="hidden" name="users_id" value="{{User::auth()->id()}}">
-        <input type="hidden" name="post_categories_id" value="{{$categorias['id'] == Post_category::find('id')}}">
+        <br>
+        <input id="CategoriaPelicula" class="form-control" type="text" name="category" value="" placeholder="Por favor seleccione el numero de su categoria">
         <br><br>
         <button id="botoncoment" class="btn" type="submit" >Publicar Post</button>
         <br><br>

@@ -50,10 +50,7 @@
         <a class="nav-link" href="./contacto">Ayuda</a>
       </li>
     </ul>
-    <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
-      <button id="search" class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
+      <button id="search" class="btn" type="submit"><a class="btn btn-outline-success" href="./logout">Cerrar Sesion</a></button>
   </div>
 </nav>
 
@@ -63,7 +60,8 @@
 
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
       <div id="middletitle" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1>Bienvenido a tu perfil {{$personaLogueada->nickname}}</h1>
+
+          <h1>Bienvenido a tu perfil</h1>
       </div>
       <div class="h3titulo rounded-pill">
 

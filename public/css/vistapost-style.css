@@ -2,7 +2,31 @@ body{
   width: 100%;
 }
 
+/* boton de cerrar sesion */
+/*  */
+#search .btn-outline-success {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+#search .btn-outline-success:hover {
+      color: #dc3545;
+      border-color: #dc3545;
+      background-color: white;
+    }
+#search .btn-outline-success:active{
+    color: white;
+    background-color:black;
+    border-color: red;
+  }
+#search .btn-outline-success:focus {
+        color: #dc3545;
+        border-color: #dc3545;
+        background-color: black;
+        border-color: pink;
+      }
 
+
+      /*  */
 .form-control{
   margin-left: 50px;
   margin-right: 30px;
@@ -78,7 +102,4 @@ a{
 .sidebar-sticky{
   margin-top: 40%;
   height:700px;
-}
-.nav-link{
-  color: white;
 }

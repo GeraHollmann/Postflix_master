@@ -120,6 +120,10 @@ section p{
   margin-left: 6%;
 
 }
+#CategoriaPelicula{
+  width: 42%;
+  margin-left: 6%;
+}
 
 /* DESCRIPCION DEL POST */
 #descripcion-tit{

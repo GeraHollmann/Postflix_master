@@ -37,10 +37,7 @@
   <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar Contactos" aria-label="Search">
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="#">Buscar Contacto</a>
-    </li>
-    <li class="nav-item text-nowrap">
-      <a class="nav-link" href="./login.php">Desloguearse</a>
+    <button id="search" class="btn" type="submit"><a class="btn btn-outline-success" href="./logout">Cerrar Sesion</a></button>
     </li>
   </ul>
 </nav>
@@ -62,6 +59,16 @@
           <li class="nav-item">
             <a class="nav-link" href="./faqs">
               F.A.Q.S
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./perfil">
+              Perfil
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./vistapost">
+              Vista de posteos
             </a>
           </li>
           <li class="nav-item">

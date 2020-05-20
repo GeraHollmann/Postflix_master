@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Post_category;
-
+use App\User;
 
 class PostController extends Controller
 {
@@ -30,7 +30,8 @@ class PostController extends Controller
 
         $nuevoPost->description = $req['description'];
         $nuevoPost->rating = $req['rating'];
-        $nuevoPost->users_id = $req['users_id'];
+        $idLog = User::find(auth()->id());
+        $nuevoPost->users_id = $idLog['id'];
         $nuevoPost->post_categories_id = $req['category'];
 
         $nuevoPost->save();

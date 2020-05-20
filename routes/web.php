@@ -51,18 +51,16 @@ Route::get("/mis-contactos", "AmigosController@amigos");
 Route::post("/mis-contactos/agregar", "AmigosController@agregar");
 Route::post("/mis-contactos/borrar", "AmigosController@borrar");
 
+
 Route::get("/perfil", function(){
   return view("perfil");
-})->middleware('MiddlewareUsuarioLogueado');
-
+ })->middleware('MiddlewareUsuarioLogueado');
 Route::get("/perfil", "PerfilController@Usuarios");
 Route::get("/perfil", "PerfilController@pelis");
-Route::post("/perfil/{id}/borrar", "PerfilController@borrarPelis");
-Route::post("/perfil/{id}/editar", "PerfilController@editarPelis");
 
-Route::get("/vistapost", function(){
-  return view("vistapost");
-})->middleware('MiddlewareUsuarioLogueado');
+ Route::get("/vistapost", function(){
+   return view("vistapost");
+  })->middleware('MiddlewareUsuarioLogueado');
 route::get("/vistapost", "VistaPostController@listaPost");
 Route::post("/vistapost", "VistaPostController@interactuar");
 Route::post("/vistapost/calificacion", "VistaPostController@calificar");
