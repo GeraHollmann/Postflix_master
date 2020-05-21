@@ -52,28 +52,8 @@ nav{
   background-color: #EFF7F5;
 }
 
-#search .btn-outline-success {
-    color: #dc3545;
-    border-color: #dc3545;
-  }
-#search .btn-outline-success:hover {
-      color: #dc3545;
-      border-color: #dc3545;
-      background-color: white;
-    }
-#search .btn-outline-success:active{
-    color: white;
-    background-color:black;
-    border-color: red;
-  }
-#search .btn-outline-success:focus {
-        color: #dc3545;
-        border-color: #dc3545;
-        background-color: black;
-        border-color: pink;
-      }
 
-/*button#boton.btn.btn-outline-success {
+button#boton.btn.btn-outline-success {
 color:#dc3545;
 border-color: #dc3545;
 padding-right: 6px 12px;
@@ -86,7 +66,7 @@ border-color:#dc3545;
 padding-right: 6px 12px;
 margin: 10px;
 background-color: #dc3545;
-}*/
+}
 
 #botoncoment{
   background-color: #EFF7F5;
