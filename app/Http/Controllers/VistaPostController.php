@@ -10,12 +10,9 @@ use Illuminate\Support\Facades\Auth;
 
 class VistaPostController extends Controller
 {
-
-// rand(5, 15)
-
   public function listaPost(){
     if (Auth::guard()->check()) {
-      $losPosts = Post::all(); //Trae todos los datos de la tabla peliculas
+      $losPosts = Post::all();
       $vac = compact('losPosts');
       return view('vistapost', $vac);
     }else{
