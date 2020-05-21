@@ -17,8 +17,24 @@ class PostController extends Controller
 
     public function alta(Request $req){
 
+        $reglas = [
+            'title_post' => "required|string|min:3",
+            'title_movie' =>"required|string|min:2",
+            'image' => "required|file",
+            'description' =>"required|string|min:2|max:150",
+            'rating' => "required|numeric|min:1|max:10",
+            'categoriaElegida' => "required|"
+        ];
 
-        // AGREGAR VALIDACIONES ACA!
+        $mensajes = [
+            "string" => "El campo :attribute debe ser un texto",
+            "min" => "El campo :attribute tiene un minimo de :min",
+            "max" => "El campo :attribute tiene un maximo de :max",
+            "numeric" => "El campo :attribute debe ser un numero",
+            "required" => "El campo :attribute es obligatorio"
+        ];
+        $this->validate($req,$reglas,$mensajes);
+
         $nuevoPost = new Post();
 
         $nuevoPost->title_post = $req['title_post'];

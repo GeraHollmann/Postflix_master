@@ -65,8 +65,13 @@ div.dropdown-menu{
 }
 
 
-
-
+/* ////////////////ERRORES */
+li{
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 3px 3px red;
+  font-weight: bold;
+}
 
 /*////////               //////
 //////  INICIO DEL ALTA //////
