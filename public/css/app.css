@@ -313,7 +313,7 @@
  .custom-file-input.is-invalid~.custom-file-label:after,.was-validated .custom-file-input:invalid~.custom-file-label:after{border-color:inherit}
  .custom-file-input.is-invalid~.invalid-feedback,.custom-file-input.is-invalid~.invalid-tooltip,.was-validated .custom-file-input:invalid~.invalid-feedback,.was-validated .custom-file-input:invalid~.invalid-tooltip{display:block}
  .custom-file-input.is-invalid:focus~.custom-file-label,.was-validated .custom-file-input:invalid:focus~.custom-file-label{box-shadow:0 0 0 .rem rgba(227,52,47,.25)}
- .form-inline{display:flex;flex-flow:row wrap;align-items:center}
+ .form-inline{display:flex;flex-flow:row wrap;align-items:center;margin-left: 35%;}
  .form-inline .form-check{width:100%}
  @media (min-width:576px){.form-inline label{justify-content:center}
  .form-inline .form-group,.form-inline label{display:flex;align-items:center;margin-bottom:0}
@@ -380,7 +380,7 @@
  .btn-outline-secondary:hover{color:#fff;background-color:#6c757d;border-color:#6c757d}.btn-outline-secondary.focus,.btn-outline-secondary:focus{box-shadow:0 0 0 .2rem rgba(108,117,125,.5)}
  .btn-outline-secondary.disabled,.btn-outline-secondary:disabled{color:#6c757d;background-color:transparent}.btn-outline-secondary:not(:disabled):not(.disabled).active,.btn-outline-secondary:not(:disabled):not(.disabled):active,.show>.btn-outline-secondary.dropdown-toggle{color:#fff;background-color:#6c757d;border-color:#6c757d}
  .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,.show>.btn-outline-secondary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem #dc3545)}
- .btn-outline-success{color:#dc3545;background-color:white;border-color:#dc3545;margin-left: 55%;}
+ .btn-outline-success{color:#dc3545;background-color:white;border-color:#dc3545;}
  .btn-outline-success:hover{color:#fff;background-color:#dc3545;border-color:red}
  .btn-outline-success.focus,.btn-outline-success:focus{box-shadow:0 0 0 .2rem #dc3545)}
  .btn-outline-success.disabled,.btn-outline-success:disabled{color:#38c172;background-color:transparent}
