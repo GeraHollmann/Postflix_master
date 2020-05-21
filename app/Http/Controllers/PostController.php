@@ -36,7 +36,6 @@ class PostController extends Controller
         $this->validate($req,$reglas,$mensajes);
 
         $nuevoPost = new Post();
-
         $nuevoPost->title_post = $req['title_post'];
         $nuevoPost->title_movie = $req['title_movie'];
 

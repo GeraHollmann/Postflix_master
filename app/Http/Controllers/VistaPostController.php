@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class VistaPostController extends Controller
 {
+  
   public function listaPost(){
     if (Auth::guard()->check()) {
       $losPosts = Post::all();
