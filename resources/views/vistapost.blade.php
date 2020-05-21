@@ -50,15 +50,15 @@
             <div class="row">
                 {{-- SE AGREGA UN FORELSE PARA QUE TRAIGA LOS DATOS DE LA PELICULA DE LA BASE DE DATOS --}}
                 @forelse($losPosts as $post)
-                    <div id="unPost" class="col-lg-4">
+                    <div id="unPost" style="border-color:red" class="col-lg-4">
                         {{-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"></svg> --}}
                         <div class="container">
                           {{-- /storage/{{$post->image}} me trae la subida por el usuario y {{$post->image}} me trae las faker --}}
-                          <img id=imagePost src="/storage/{{$post->image}}" alt="">
+                          <img id=imagePost src="/storage/{{$post->image}}" alt="" height="200px" width="300px">
                         </div>
                         <h3 id="titulos">Pelicula/Serie:</h3><p>{{ $post->title_movie  }}</p>
                         <h3 id="titulos">Titulo del Post:</h3><p>{{ $post->title_post }}</p>
-                        <p>{{ $post->description}}</p>
+                          <h3 id="titulos">Descripcion:</h3><p>{{ $post->description}}</p>
                         <div id="divflotante" class="flotar"><h2 id="titulos">Puntuación:</h2></div>
                         <div class="flotar"><p class="puntua">{{$post->rating}}</p></div>
                         <br>

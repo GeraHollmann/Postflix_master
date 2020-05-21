@@ -31,7 +31,11 @@ public function editarPosteo(Request $request){
 
   $posteo->title_post = $request['title_post'];
   $posteo->title_movie = $request['title_movie'];
-  $posteo->image = $request['image'];
+
+  $ruta = $request->file('image')->store("public");
+  $nombreArchivo = basename($ruta);
+  $posteo->image = $nombreArchivo;
+
   $posteo->description = $request['description'];
   $posteo->rating = $request['rating'];
   $posteo->users_id = User::find(auth()->id())['id'];

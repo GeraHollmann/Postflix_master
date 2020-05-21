@@ -12,21 +12,13 @@
       <nav class="navbar navbar-light bg-transparent">
         <!-- LOGO -->
         <a title="Logo PostFlix" href="/index">
-          <img class="logo" src="/imagenes/logo.png" alt="Postflix">
+          <img class="logo" src="/public/imagenes/logo.png" alt="Postflix">
         </a>
       </nav>
       <div class="form-inline  col-xs-2">
         <a title="Boton Home" href="index">
           <button class="btn btn-outline-success " style="margin:10px" id="boton" type="button"> Home </button>
         </a>
-        @if(!Auth::check())
-        <a title="Boton Login" href="/login">
-          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
-        </a>
-        <a title="Boton Registro" href="/register">
-          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
-        </a>
-        @endif
         <a title="Boton Mis Posts" href="/vistapost">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
         </a>
