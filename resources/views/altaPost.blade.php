@@ -1,19 +1,3 @@
-@php
-  $tituloPost= "";
-  $tituloPelicula= "";
-  $imagen= "";
-  $descripcion="";
-  $rating = "Elija una puntuación";
-
-  if($_POST){
-    $tituloPost = $_POST["title_post"];
-    $tituloPelicula = $_POST["title_movie"];
-    $imagen= $_POST["image"];
-    $descripcion = $_POST["description"];
-    $rating = $_POST["rating"];
-  }
-
-@endphp
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head class="">
@@ -72,19 +56,19 @@
       <form id="alta" class="form-signin rounded-pill col-8 col-md-8 col-lg-12" action="/altaPost" method="post" enctype="multipart/form-data">
         {{csrf_field()}} <!--SIEMPRE DEBE ESTAR DENTRO DEL FORMULARIO-->
         <p id="tituloPost">Titulo del Post*</p>
-        <input type="text" id="inputTitulo" value=""name="title_post" class="form-control" placeholder="Ingrese el titulo del post" required autofocus="">
+        <input type="text" id="inputTitulo" value="{{old('title_post')}}" name="title_post" class="form-control" placeholder="Ingrese el titulo del post" required autofocus="">
         <br>
         <p id="tituloPelicula">Titulo de la Pelicula/Serie </p>
-        <input type="text" id="inputTitulo" value="" name="title_movie" class="form-control" placeholder="Ingrese el titulo de la pelicula/serie" required autofocus="">
+        <input type="text" id="inputTitulo" value="{{old('title_movie')}}" name="title_movie" class="form-control" placeholder="Ingrese el titulo de la pelicula/serie" required autofocus="">
         <br>
         <p id="imagen-tit" class="col-xs-8 col-md-8">Ingresa la Imagen de tu post</p>
-        <input type="file" id="botonarchivo" value="" name="image">
+        <input type="file" id="botonarchivo" value="{{old('image')}}" name="image">
         <br><br>
         <p id="descripcion-tit">Descripción</p>
-        <textarea id="comentario" value="" placeholder="Escribe aqui la descripción de tu post!..." name="description" rows="4" cols="67"  ></textarea>
+        <textarea id="comentario" value="{{ old('description') }}" placeholder="Escribe aqui la descripción de tu post!..."  name="description" rows="4" cols="67"  ></textarea>
         <div id="box-puntuacion">
           <p id="puntuacion-tit">Ingresa una puntuacion</p>
-          <select id="puntuacion" class="form-control" name="rating" value="">
+          <select id="puntuacion" class="form-control" name="rating" value="{{ old('rating') }}">
             <option >Elija una puntuación</option>
             <option >1</option><option >2</option><option >3</option><option >4</option>
             <option >5</option><option >6</option><option >7</option><option >8</option>

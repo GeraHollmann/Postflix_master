@@ -2,7 +2,7 @@
 @section('content')
 <main id="detailCountry">
     <div class="container">
-        <a href="/" style="display: block; margin-bottom: 10px">< Perfil</a>
+        <a href="/perfil" style="display: block; margin-bottom: 10px">< Perfil</a>
         <div id="visteo" style="background-color:white;" class="row d-flex align-items-center">
             <div class="col-6">
                 <img class="image" src="/storage/{{ $posteo->image }}" alt="{{ $posteo->title_movie }}">

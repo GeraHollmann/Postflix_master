@@ -16,34 +16,31 @@
           </a>
         </nav>
         <div class="form-inline  col-xs-2">
-          <a title="Boton Home" href="index">
+          <a title="Boton Home" href="/index">
             <button class="btn btn-outline-success " style="margin:10px" id="boton" type="button"> Home </button>
           </a>
           @if (Auth::check())
-            <a title="Boton Login" href="./logout">
+            <a title="Boton Login" href="/logout">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Cerrar Sesion </button>
             </a>
-            <a title="Boton Login" href="./vistapost">
+            <a title="Boton Login" href="/vistapost">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Vista de posteos </button>
             </a>
-            <a title="Boton Login" href="./perfil">
+            <a title="Boton Login" href="/perfil">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
             </a>
           @endif
           @if (!Auth::check())
-          <a title="Boton Login" href="./login">
+          <a title="Boton Login" href="/login">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
           </a>
-          <a title="Boton Registro" href="./register">
+          <a title="Boton Registro" href="/register">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
           </a>
           @endif
-          <a title="Boton Ayuda" href="./faqs">
+          <a title="Boton Ayuda" href="/faqs">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> F.A.Q.S </button>
           </a>
-          <!--<a title="Boton Mis Posts" href="./vistapost">
-            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
-          </a>-->
         </div>
       </header>
       <!-- COMIENZO DE CONTACTO POINTFLIX -->
@@ -54,8 +51,7 @@
           <br>
         </div>
         <br>
-
-        <form id="form" class="form-signin rounded-pill" method="post" enctype="multipart/form-data">
+        <form id="form" class="theForm" class="form-signin rounded-pill" method="post" enctype="multipart/form-data">
           {{csrf_field()}} <!--SIEMPRE DEBE ESTAR DENTRO DEL FORMULARIO-->
           <p>Nombre*</p>
           <input type="text" id="inputNombre" name="first_name"class="form-control" placeholder="Ingrese su Nombre" required autofocus="">
@@ -75,6 +71,6 @@
 
       </section>
     </div>
-
+    <script src="js/validacion.js"></script>
   </body>
 </html>
