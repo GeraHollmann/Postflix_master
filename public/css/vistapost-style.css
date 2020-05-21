@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 body{
   width: 100%;
 }
-
 /* boton de cerrar sesion */
 /*  */
 button#search.btn:focus {
@@ -40,78 +40,69 @@ button#search.btn:focus {
         box-shadow: 0 0 0 0.2rem #dc3545;
 
       }
-
-
-      /*  */
-.form-control{
-  margin-left: 50px;
-  margin-right: 30px;
-}
-
 #postflixlogo{
   margin-top: 24px;
   margin-left: 20px;
 }
-.container-marketing{
-margin-top: 30px;
-margin-left: 10px;
-}
 
 #posteos{
-  width: 100%;
+  width: 101%;
   background-color: white;
-/*  background-image: url("../Imagenes/fondo_perfil.jpg");*/
   margin-top: 6%;
   overflow: hidden;
+
 }
+/*  background-image: url("../Imagenes/fondo_perfil.jpg");*/
+
 #unPost{
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  border-style: groove;
+  border-color: #dc3545;
+  margin-left: 10%;
+
 }
 #divflotante{
-    margin-right: 5%;
+justify-content: center;
 }
 
 .flotar{
-  float: left;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
 }
 .puntua{
-font-size: 1.8rem;
+  text-align: center;
+font-size: 1.5rem;
 }
 #imagePost{
-  margin-left: 15%;
+  max-width: 100%;
+  max-height: 900px;;
+  justify-content: center;
+  margin-top: 5px;
+
 }
 
 #titulos{
-  color:white;
+  margin-top: 10px;
+  text-align: center;
+  color:#dc3545;
   font-family: 'Muli', sans-serif;
   font-weight: bold;
-  text-shadow: 3px 3px 2px #404040;
-
+  text-decoration: underline;
 }
 div p{
   color:black;
   font-family: 'Muli', sans-serif;
   font-size: 1.4rem;
   -webkit-text-stroke: 0.5px grey;
+  text-align:center;
 }
 
-
-
-#yourfilms{
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  text-decoration: underline;
-
-}
 a{
     color: black;
     text-decoration: none;
     background-color: transparent;
-}
-
-
-#posteos{
-  margin-left: 40%;
 }
 
 /* BARRA DEL COSTADO */

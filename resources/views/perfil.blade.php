@@ -9,23 +9,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="./css/perfil-style.css">
+<link rel="stylesheet" href="/css/perfil-style.css">
+<body>
 
-
-  <style type="text/css">/* Chart.js */
-/* @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;} */
-</style></head>
-  <body>
-    {{-- BARRA DE NAVEGACION ANTERIOR --}}
-  <!--  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-<a href="./index.php"><img id="postflixlogo" class="mb-4" src="logo.png" alt="" width="120" height="25"></a>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar" aria-label="Search">
-  <ul class="navbar-nav px-3">
-    <li class="nav-item text-nowrap">
-      <a class="nav-link" href="./index.php">Cerrar sesion</a>
-    </li>
-  </ul>
-</nav>-->
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a href="./index.php">  <img id="postflixlogo" class="mb-4" src="logo.png" alt="" width="120" height="25"></a>
@@ -43,9 +29,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="/faqs">F.A.Q.S</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/mis-contactos">Mis contactos</a>
-      </li>
+      
       <li class="nav-item active">
         <a class="nav-link" href="/contacto">Ayuda</a>
       </li>
