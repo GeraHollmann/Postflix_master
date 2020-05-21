@@ -20,23 +20,23 @@
           <form id="barraNav" class="form-inline   col-lg-4 col-xs-12">
             @if (!Auth::check())
                 <a title="Boton Login" href="./login">
-                  <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
+                  <button class="btn btn-outline-success" style= "margin:10px;" id="boton" type="button"> Login </button>
                 </a>
             <a title="Boton Registro" href="./register">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
+              <button class="btn btn-outline-success" style="" id="boton" type="button"> Registro </button>
             </a>
           @else
             <a title="Boton Login" href="./logout">
-              <button class="btn btn-outline-success" style="margin:10px; width:120px;" id="boton" type="button"> Cerrar Sesion </button>
+              <button class="btn btn-outline-success" style="margin:; width:120px;" id="boton" type="button"> Cerrar Sesion </button>
             </a>
             <a title="Boton Login" href="./vistapost">
-              <button class="btn btn-outline-success" style="margin:10px; width:150px;"  id="boton" type="button"> Vista de posteos </button>
+              <button class="btn btn-outline-success" style="margin:; width:139px;"  id="boton" type="button"> Vista de posteos </button>
             </a>
             <a title="Boton Registro" href="./perfil">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
+              <button class="btn btn-outline-success" style="margin:" id="boton" type="button"> Perfil </button>
             </a>
             <a title="Boton Contacto" href="./mis-contactos">
-              <button class="btn btn-outline-success" style="margin:10px; width:150px;" id="boton" type="button"> Mis contactos </button>
+              <button class="btn btn-outline-success" style="margin-right: 2%; width:139px;" id="boton" type="button"> Mis contactos </button>
             </a>
           @endif
 
