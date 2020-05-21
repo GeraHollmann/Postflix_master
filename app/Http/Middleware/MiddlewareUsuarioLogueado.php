@@ -15,15 +15,19 @@ class MiddlewareUsuarioLogueado
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next, $guard = null)
     {
-      if (User::find('role') == 'user') {
+  if(Auth::guard($guard)->check()){
+    switch(Auth::user()->role){
+      case 'user':
         return $next($request);
-      }else{
-      
-        return redirect('/login');
-      }
-
+          break;
+      case 'admin':
+        return $next($request);
+          break;
+        }
+}
+return redirect('./login');
     }
 }
 ?>

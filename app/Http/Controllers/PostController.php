@@ -9,9 +9,9 @@ use App\User;
 class PostController extends Controller
 {
 
-    public function selectCategoria(){
-        $lasCategorias = Post_category::all(); //Trae todos los datos de la tabla categorias
-        $vac = compact('lasCategorias');
+    public function altaPost(){
+        $categorias = Post_category::all(); //Trae todos los datos de la tabla categorias
+        $vac = compact('categorias');
         return view("altaPost",$vac);
     }
 
@@ -32,7 +32,7 @@ class PostController extends Controller
         $nuevoPost->rating = $req['rating'];
         $idLog = User::find(auth()->id());
         $nuevoPost->users_id = $idLog['id'];
-        $nuevoPost->post_categories_id = $req['category'];
+        $nuevoPost->post_categories_id = $req['categoriaElegida'];
 
         $nuevoPost->save();
         return redirect('/perfil');

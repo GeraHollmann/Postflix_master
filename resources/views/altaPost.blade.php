@@ -65,18 +65,14 @@
           <p id="puntuacion-tit">Seleccione una categoria</p>
           <select id="categorias" class="form-control" name="categoriaElegida">
             <option >Elija una categoria</option>
-              @forelse ($lasCategorias as $categorias)
-                <option>
-                {{$categorias->id}}:
-                {{$categorias->category_name}}
-              @empty
-                <h2>No se encontraron Categorias</h2>
-                </option>
-              @endforelse
+              @foreach ($categorias as $categoria)
+                <option value="{{$categoria->id}}">
+                {{$categoria->category_name}}
+              </option>
+              @endforeach
           </select>
         </div>
         <br>
-        <input id="CategoriaPelicula" class="form-control" type="text" name="category" value="" placeholder="Por favor seleccione el numero de su categoria">
         <br><br>
         <button id="botoncoment" class="btn" type="submit" >Publicar Post</button>
         <br><br>

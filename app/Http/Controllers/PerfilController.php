@@ -16,18 +16,19 @@ class PerfilController extends Controller
   //       return redirect('/perfil');
   // }
 
-  public function Usuarios(){
-    if (Auth::guard()->check()){
-      $personaLogueada = User::find(auth()->id());
-      dd($personaLogueada);
-      $vac = compact('personaLogueada');
-      return view('perfil', $vac);
-    }else{
-      return redirect('login');
-    }
-}
+//   public function usuarios(){
+//     if (Auth::guard()->check()){
+//     // $personaLogueada = User::find(auth()->id());
+//       /*$ColeccionDelUsuario = Post::where('users_id', "=", $idLog['id'])->get();
+//       $vac = compact('personaLogueada');*/
+//       return view('perfil', $vac);
+//     }else{
+//       return redirect('login');
+//     }
+// }
 
-    public function pelis(){
+
+/*    public function pelis(){
       if (Auth::guard()->check()) {
           $idLog = User::find(auth()->id());
           $ColeccionDelUsuario = Post::where('users_id', "=", $idLog['id'])->get();
@@ -42,7 +43,7 @@ class PerfilController extends Controller
       }else {
         return redirect('login');
       }
-    }
+    }*/
 
 
 }

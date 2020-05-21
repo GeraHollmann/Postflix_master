@@ -47,7 +47,7 @@ Route::post("/contacto", "ContactoController@contacto");
 Route::get("/mis-contactos", function(){
   return view("mis-contactos");
 })->middleware('MiddlewareUsuarioLogueado');
-Route::get("/mis-contactos", "AmigosController@amigos");
+
 Route::post("/mis-contactos/agregar", "AmigosController@agregar");
 Route::post("/mis-contactos/borrar", "AmigosController@borrar");
 
@@ -55,18 +55,12 @@ Route::post("/mis-contactos/borrar", "AmigosController@borrar");
 Route::get("/perfil", function(){
   return view("perfil");
  })->middleware('MiddlewareUsuarioLogueado');
-Route::get("/perfil", "PerfilController@Usuarios");
-Route::get("/perfil", "PerfilController@pelis");
 
- Route::get("/vistapost", function(){
-   return view("vistapost");
-  })->middleware('MiddlewareUsuarioLogueado');
-route::get("/vistapost", "VistaPostController@listaPost");
-Route::post("/vistapost", "VistaPostController@interactuar");
+Route::get("/vistapost", "VistaPostController@listaPost")->middleware('MiddlewareUsuarioLogueado');
 Route::post("/vistapost/calificacion", "VistaPostController@calificar");
-Route::post("/vistapost/comentar", "VistaPostController@comentar");
 
-Route::get("/altaPost", "PostController@selectCategoria");/*->middleware('MiddlewareUsuarioLogueado');*/
+
+Route::get("/altaPost", "PostController@altaPost");/*->middleware('MiddlewareUsuarioLogueado');*/
 Route::post("/altaPost", "PostController@alta");
 
 Auth::routes();

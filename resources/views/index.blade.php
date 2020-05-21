@@ -18,12 +18,22 @@
 
           <!-- BARRA DE NAVEGACION -->
           <form class="form-inline   col-lg-4 col-xs-12">
-            <a title="Boton Login" href="./login">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
-            </a>
+            @if (!Auth::check())
+                <a title="Boton Login" href="./login">
+                  <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
+                </a>
             <a title="Boton Registro" href="./register">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
             </a>
+          @else
+            <a title="Boton Login" href="./vistapost">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Vista de posteos </button>
+            </a>
+            <a title="Boton Registro" href="./perfil">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
+            </a>
+          @endif
+
             <a title="Boton Ayuda" href="./faqs">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> F.A.Q.S </button>
             </a>

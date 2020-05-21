@@ -17,8 +17,4 @@ class Post extends Model
     return $this->belongsTo('App\Post_category','post_categories_id');
   }
 
-
-  public function User(){
-    return $this->hasMany('App\Post', 'users_id');
-}
 }
