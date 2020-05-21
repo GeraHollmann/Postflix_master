@@ -26,6 +26,9 @@
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
             </a>
           @else
+            <a title="Boton Login" href="./logout">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Cerrar Sesion </button>
+            </a>
             <a title="Boton Login" href="./vistapost">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Vista de posteos </button>
             </a>
