@@ -21,15 +21,27 @@
         <a title="Boton Home" href="index">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Home </button>
         </a>
-
+        @if (Auth::check())
+          <a title="Boton Contacto" href="./logout">
+            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Cerrar Sesion </button>
+          </a>
+        <a title="Boton Contacto" href="./vistapost">
+          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Vista de posteos </button>
+        </a>
+        <a title="Boton Contacto" href="./perfil">
+          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
+        </a>
+        @endif
+        @if (!Auth::check())
         <a title="Boton Login" href="./login">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
         </a>
         <a title="Boton Registro" href="./register">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
         </a>
+        @endif
         <a title="Boton Contacto" href="./contacto">
-          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Contacto </button>
+          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Ayuda </button>
         </a>
       </form>
 </div>

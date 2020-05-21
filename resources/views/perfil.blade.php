@@ -66,18 +66,21 @@
       <div class="h3titulo rounded-pill">
 
         <h3>Mis Posteos</h3>
-        <br>
+          <button class="btn btn-outline-success" type="submit" name="button"><a id="botonRojo" href="/altaPost">+ Crear un posteo</a></button>
+
+          <br>
       </div>
 
     <div class="container">
       <div class="row">
         @forelse (Auth::user()->posts as $post)
 
-          <div class="col-md-4">
+          <div id="posteador" class="col-md-4">
             <div class="card mb-4 shadow-sm">
                    <img src="{{$post->image}}" alt="">
   <!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
               <div class="card-body">
+
                 <h5>{{$post->title_post}}</h5>
                 <h5>{{$post->title_movie}}</h5>
                 <h6>{{$post->description}}</h6>
@@ -85,10 +88,22 @@
 
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-success">Ver</button>
-                    <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
-                    <input id="eliminarPost" type="reset" class="btn btn-sm btn-outline-success" name="eliminar" value="Eliminar Post">
-                  </div>
+                    <form class="" action="index.html" method="post">
+                      <button type="button" class="btn btn-sm btn-outline-success">Ver</button>
+                    </form>
+
+                    <form class="" action="/editarPosteo" method="post">
+                      <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                    </form>
+
+
+                    <form class="" action="/borrarPelicula" method="post">
+                      {{csrf_field()}}
+                      <input type="hidden" class="btn btn-sm btn-outline-success" name="id" value="{{$post->id}}">
+                      <input class="btn btn-sm btn-outline-success" type="submit" name="" value="Borrar Pelicula">
+
+                    </form>
+                      </div>
                   <small class="text-muted"></small>
                 </div>
               </div>

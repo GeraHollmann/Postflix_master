@@ -13,6 +13,13 @@
     color: #dc3545;
     border-color: #dc3545;
   }
+  #botonRojo{
+    color: red;
+    text-decoration: none;
+  }
+  #posteador{
+    width: 100px;
+  }
   .btn-outline-success:hover {
       color: #dc3545;
       border-color: #dc3545;

@@ -13,8 +13,9 @@ body{
 /////////                ////*/
 form.form-inline{
   flex-flow: row;
-  margin-right: 10%;
+  margin-right: 38%;
 }
+
 header{
   overflow: hidden;
   width: 100%;

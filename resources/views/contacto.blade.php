@@ -19,13 +19,28 @@
           <a title="Boton Home" href="index">
             <button class="btn btn-outline-success " style="margin:10px" id="boton" type="button"> Home </button>
           </a>
-
+          @if (Auth::check())
+            <a title="Boton Login" href="./logout">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Cerrar Sesion </button>
+            </a>
+            <a title="Boton Login" href="./vistapost">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Vista de posteos </button>
+            </a>
+            <a title="Boton Login" href="./perfil">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
+            </a>
+            <a title="Boton Login" href="./mis-contactos">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Mis contactos </button>
+            </a>
+          @endif
+          @if (!Auth::check())
           <a title="Boton Login" href="./login">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
           </a>
           <a title="Boton Registro" href="./register">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
           </a>
+          @endif
           <a title="Boton Ayuda" href="./faqs">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> F.A.Q.S </button>
           </a>

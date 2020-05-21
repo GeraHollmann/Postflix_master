@@ -9,41 +9,24 @@ use Illuminate\Support\Facades\Auth;
 
 class PerfilController extends Controller
 {
-  //no se si sirve , probando los middleware
-  // public function __construct()
-  // {
-  //     $this->middleware('auth');
-  //       return redirect('/perfil');
-  // }
 
-//   public function usuarios(){
-//     if (Auth::guard()->check()){
-//     // $personaLogueada = User::find(auth()->id());
-//       /*$ColeccionDelUsuario = Post::where('users_id', "=", $idLog['id'])->get();
-//       $vac = compact('personaLogueada');*/
-//       return view('perfil', $vac);
-//     }else{
-//       return redirect('login');
-//     }
-// }
+public function borrarPosteo(Request $req){
+  $idPost = $req['id'];
+  $post = Post::find($idPost);
+  $post->delete();
+  return redirect('/perfil');
+}
 
+public function editarPosteo(Request $request)
+{
+    $posteo = Post::findOrFail($request->id);
+    dd($posteo);
+    $posteo->fill($request->all());
+    $posteo->save();
 
-/*    public function pelis(){
-      if (Auth::guard()->check()) {
-          $idLog = User::find(auth()->id());
-          $ColeccionDelUsuario = Post::where('users_id', "=", $idLog['id'])->get();
-          $posteoDelUsuario = $ColeccionDelUsuario->toArray();
-          if ($idLog['id'] == $posteoDelUsuario[0]['users_id']){
-            $posteo = $posteoDelUsuario;
-            $vac = compact('posteo');
-             return view('perfil', $vac);
-           }else{
-             return 'No tienes Posteos!';
-          }
-      }else {
-        return redirect('login');
-      }
-    }*/
+    return Redirect::to('/perfil');
+}
+
 
 
 }
