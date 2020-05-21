@@ -43,6 +43,12 @@ public function editarPosteo(Request $request){
 
 }
 
+public function detallePelicula($idPosteo) {
+    $posteo = Post::find($idPosteo);
+    $vac = compact('posteo');
+    return view('detallePelicula', $vac);
+}
+
 
 
 }

@@ -21,56 +21,40 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img class="logo" src="logo.png" alt="Postflix">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registro') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
+      <header class="container">
+        <nav class="navbar navbar-light bg-transparent">
+          <!-- LOGO -->
+          <a title="PostFlix" href="./index.php">
+            <img class="logo" src="logo.png" alt="Postflix">
+          </a>
         </nav>
+        <div class="form-inline  col-xs-2">
+          <a title="Boton Home" href="index">
+            <button class="btn btn-outline-success " style="margin:10px" id="boton" type="button"> Home </button>
+          </a>
+          @if (Auth::check())
+            <a title="Boton Mis Posts" href="./vistapost">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
+            </a>
+            <a title="Boton Mis Posts" href="./perfil">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
+            </a>
+            <a title="Boton Mis Posts" href="./mis-contactos">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Contactos </button>
+            </a>
+            <a title="Boton Contacto" href="/logout">
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Cerrar Sesion </button>
+            </a>
+          @endif
+          <a title="Boton Contacto" href="./contacto">
+            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Ayuda </button>
+          </a>
+          <a title="Boton Mis Posts" href="./faqs">
+            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> F.A.Q.S </button>
+          </a>
+
+        </div>
+      </header>
 
         <main class="py-4">
             @yield('content')

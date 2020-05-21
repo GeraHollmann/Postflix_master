@@ -96,6 +96,9 @@
                                     {{ __('Registrarse') }}
                                 </button>
                             </div>
+                            <a style="margin-left:15%" class="btn btn-link" href="/login">
+                                {{ __('¿Ya tenes un usuario?') }}
+                            </a>
                         </div>
                     </form>
                 </div>

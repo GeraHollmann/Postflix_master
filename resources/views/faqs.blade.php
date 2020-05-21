@@ -68,7 +68,7 @@
   ¿Como me registro?
   </button>
   <div class="dropdown-menu">
-    Para registrarse en Postflix es muy simple, hace <strong> <a href="registro.php"> click aqui</a></strong>
+    Para registrarse en Postflix es muy simple, hace <strong> <a href="/register"> click aqui</a></strong>
     y completa el formulario para poder puntuar
      tus peliculas o series favoritas!
 
@@ -89,7 +89,7 @@
   ¿Como me contacto con algun representante oficial?
   </button>
   <div class="dropdown-menu" >
-    Si tenes alguna otra inquietud o algun problema en particular podes contactarte con nosotros debe este <strong> <a href="contacto.php">link</a> </strong></div>
+    Si tenes alguna otra inquietud o algun problema en particular podes contactarte con nosotros debe este <strong> <a href="/contacto">link</a> </strong></div>
 
   </div>
 </div>

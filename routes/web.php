@@ -56,17 +56,19 @@ Route::get("/perfil", function(){
   return view("perfil");
  })->middleware('MiddlewareUsuarioLogueado');
 
- Route::post('/borrarPelicula', 'PerfilController@borrarPosteo');
+ Route::post('/borrarPelicula', 'PerfilController@borrarPosteo')->middleware('MiddlewareUsuarioLogueado');
 
- Route::post('/perfil/editarPosteo', 'PerfilController@editarPosteo');
- Route::get('/perfil/editarPosteo/{idPosteo}', 'PerfilController@formEditar');
+ Route::post('/perfil/editarPosteo', 'PerfilController@editarPosteo')->middleware('MiddlewareUsuarioLogueado');
+ Route::get('/perfil/editarPosteo/{idPosteo}', 'PerfilController@formEditar')->middleware('MiddlewareUsuarioLogueado');
+
+ Route::get('/perfil/ver/{idPosteo}', 'PerfilController@detallePelicula')->middleware('MiddlewareUsuarioLogueado');
 
 
 Route::get("/vistapost", "VistaPostController@listaPost")->middleware('MiddlewareUsuarioLogueado');
-Route::post("/vistapost/calificacion", "VistaPostController@calificar");
+Route::post("/vistapost/calificacion", "VistaPostController@calificar")->middleware('MiddlewareUsuarioLogueado');
 
 
-Route::get("/altaPost", "PostController@altaPost");/*->middleware('MiddlewareUsuarioLogueado');*/
-Route::post("/altaPost", "PostController@alta");
+Route::get("/altaPost", "PostController@altaPost")->middleware('MiddlewareUsuarioLogueado');
+Route::post("/altaPost", "PostController@alta")->middleware('MiddlewareUsuarioLogueado');
 
 Auth::routes();

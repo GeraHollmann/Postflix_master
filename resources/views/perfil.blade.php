@@ -88,11 +88,11 @@
 
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <form class="" action="index.html" method="post">
-                      <button type="button" class="btn btn-sm btn-outline-success">Ver</button>
+                    <form class="" action="/perfil/ver/{{$post->id}}" method="post">
+                      <button type="button" class="btn btn-sm btn-outline-success"><a style="color:red;text-decoration:none;" href="/perfil/ver/{{$post->id}}">Ver</a></button>
                     </form>
 
-                    <form class="" action="/perfil/editarPosteo/{idPosteo}" method="post">
+                    <form class="" action="/perfil/editarPosteo/{{$post->id}}" method="post">
                       <button type="button" class="btn btn-sm btn-outline-success" value="{{$post->id}}"><a style="color:red;text-decoration:none;" href="/perfil/editarPosteo/{{$post->id}}">Editar</a></button>
                     </form>
 
@@ -100,7 +100,7 @@
                     <form class="" action="/borrarPelicula" method="post">
                       {{csrf_field()}}
                       <input type="hidden" class="btn btn-sm btn-outline-success" name="id" value="{{$post->id}}">
-                      <input class="btn btn-sm btn-outline-success" type="submit" name="" value="Borrar Pelicula">
+                      <input class="btn btn-sm btn-outline-success" type="submit" name="" value="Borrar posteo">
 
                     </form>
                       </div>
