@@ -27,7 +27,7 @@ class MiddlewareUsuarioLogueado
           break;
         }
 }
-return redirect('./login');
+return redirect('/login');
     }
 }
 ?>

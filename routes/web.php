@@ -42,15 +42,9 @@ Route::get("/faqs", function(){
 Route::get("/contacto", function(){
   return view("contacto");
 });
-Route::post("/contacto", "ContactoController@contacto");
 
-Route::get("/mis-contactos", function(){
-  return view("mis-contactos");
-})->middleware('MiddlewareUsuarioLogueado');
-
-Route::post("/mis-contactos/agregar", "AmigosController@agregar");
-Route::post("/mis-contactos/borrar", "AmigosController@borrar");
-
+Route::get('/vistaReclamos', 'ContactoController@reclamos');
+Route::post('/borrarReclamos', 'ContactoController@borrarReclamo');
 
 Route::get("/perfil", function(){
   return view("perfil");

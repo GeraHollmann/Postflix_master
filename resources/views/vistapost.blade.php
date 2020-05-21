@@ -26,9 +26,6 @@
                 <a class="nav-link" href="./faqs">F.A.Q.S</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="./mis-contactos">Mis contactos</a>
-              </li>
-              <li class="nav-item active">
                 <a class="nav-link" href="./contacto">Ayuda</a>
               </li>
             </ul>

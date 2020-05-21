@@ -29,27 +29,24 @@
           </a>
         </nav>
         <div class="form-inline  col-xs-2">
-          <a title="Boton Home" href="index">
+          <a title="Boton Home" href="/index">
             <button class="btn btn-outline-success " style="margin:10px" id="boton" type="button"> Home </button>
           </a>
           @if (Auth::check())
-            <a title="Boton Mis Posts" href="./vistapost">
+            <a title="Boton Mis Posts" href="/vistapost">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
             </a>
-            <a title="Boton Mis Posts" href="./perfil">
+            <a title="Boton Mis Posts" href="/perfil">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
-            </a>
-            <a title="Boton Mis Posts" href="./mis-contactos">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Contactos </button>
             </a>
             <a title="Boton Contacto" href="/logout">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Cerrar Sesion </button>
             </a>
           @endif
-          <a title="Boton Contacto" href="./contacto">
+          <a title="Boton Contacto" href="/contacto">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Ayuda </button>
           </a>
-          <a title="Boton Mis Posts" href="./faqs">
+          <a title="Boton Mis Posts" href="/faqs">
             <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> F.A.Q.S </button>
           </a>
 
