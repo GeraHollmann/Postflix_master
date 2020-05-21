@@ -11,30 +11,39 @@
 
 .btn-outline-success {
     color: #dc3545;
+
+    box-shadow: pink;
     border-color: #dc3545;
   }
   #botonRojo{
     color: red;
     text-decoration: none;
+    border-color: red;
+    box-shadow: pink;
   }
   #posteador{
     width: 100px;
   }
   .btn-outline-success:hover {
       color: #dc3545;
-      border-color: #dc3545;
+
       background-color: white;
+      border-color: red;
+      box-shadow: pink;
     }
     .btn-outline-success:active{
     color: white;
     background-color:black;
     border-color: red;
+
+    box-shadow: pink;
   }
     .btn-outline-success:focus {
         color: #dc3545;
         border-color: #dc3545;
         background-color: black;
-        border-color: pink;
+        border-color: red;
+        box-shadow: pink;
       }
 
 h1{

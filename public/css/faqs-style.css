@@ -62,18 +62,25 @@ div.dropdown-menu{
 
 #boton{
   background-color: white;
+  border-color: red;
+  box-shadow: pink;
 }
 
 button#boton.btn.btn-outline-success {
 color:#dc3545;
-border-color: #dc3545;
+border-color: red;
+box-shadow: pink;
 padding-right: 6px 12px;
 margin: 10px;
 }
 button#boton.btn.btn-outline-success:hover {
 color: white;
-border-color:#dc3545;
+border-color: red;
+box-shadow: pink;
 padding-right: 6px 12px;
 margin: 10px;
 background-color: #dc3545;
+}
+button#boton.btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem #dc3545;
 }

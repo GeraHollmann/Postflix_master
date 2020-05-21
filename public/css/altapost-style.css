@@ -200,6 +200,9 @@ color:#dc3545;
 border-color: #dc3545;
 padding-right: 6px 12px;
 margin: 10px;
+box-shadow: 0 0 0 0.2rem #dc3545;
+border-color: red;
+
 }
 
 button#boton.btn.btn-outline-success:hover {
@@ -208,8 +211,16 @@ border-color:#dc3545;
 padding-right: 6px 12px;
 margin: 10px;
 background-color: #dc3545;
-}
+border-color: red;
+box-shadow: 0 0 0 0.2rem #dc3545;
 
+}
+button#boton.btn.btn-outline-success:focus {
+box-shadow: 0 0 0 0.2rem #dc3545;
+}
 #botoncoment{
   background-color: #EFF7F5;
+  border-color: red;
+  box-shadow: 0 0 0 0.2rem #dc3545;
+
 }
