@@ -58,7 +58,9 @@ Route::get("/perfil", function(){
 
  Route::post('/borrarPelicula', 'PerfilController@borrarPosteo');
 
- Route::get('/editarPosteo/{id}', 'PerfilController@editarPosteo');
+ Route::post('/perfil/editarPosteo', 'PerfilController@editarPosteo');
+ Route::get('/perfil/editarPosteo/{idPosteo}', 'PerfilController@formEditar');
+
 
 Route::get("/vistapost", "VistaPostController@listaPost")->middleware('MiddlewareUsuarioLogueado');
 Route::post("/vistapost/calificacion", "VistaPostController@calificar");

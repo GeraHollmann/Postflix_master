@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Post;
+use App\Post_category;
 use Illuminate\Support\Facades\Auth;
 
 class PerfilController extends Controller
@@ -17,14 +18,29 @@ public function borrarPosteo(Request $req){
   return redirect('/perfil');
 }
 
-public function editarPosteo(Request $request)
+public function formEditar($id)
 {
-    $posteo = Post::findOrFail($request->id);
-    dd($posteo);
-    $posteo->fill($request->all());
-    $posteo->save();
+    $posteo = Post::find($id);
+    $categorias = Post_category::all();
+    $vac = compact('posteo', 'categorias');
+    return view('editarPosteo', $vac);
+}
 
-    return Redirect::to('/perfil');
+public function editarPosteo(Request $request){
+  $posteo = Post::find($request['idPosteo']);
+
+  $posteo->title_post = $request['title_post'];
+  $posteo->title_movie = $request['title_movie'];
+  $posteo->image = $request['image'];
+  $posteo->description = $request['description'];
+  $posteo->rating = $request['rating'];
+  $posteo->users_id = User::find(auth()->id())['id'];
+  $posteo->post_categories_id = $request['categoriaElegida'];
+
+  $posteo->save();
+  return redirect('/perfil');
+
+
 }
 
 

@@ -92,8 +92,8 @@
                       <button type="button" class="btn btn-sm btn-outline-success">Ver</button>
                     </form>
 
-                    <form class="" action="/editarPosteo" method="post">
-                      <button type="button" class="btn btn-sm btn-outline-success">Editar</button>
+                    <form class="" action="/perfil/editarPosteo/{idPosteo}" method="post">
+                      <button type="button" class="btn btn-sm btn-outline-success" value="{{$post->id}}"><a style="color:red;text-decoration:none;" href="/perfil/editarPosteo/{{$post->id}}">Editar</a></button>
                     </form>
 
 
