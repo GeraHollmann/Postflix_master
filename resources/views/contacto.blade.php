@@ -29,9 +29,6 @@
             <a title="Boton Login" href="./perfil">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
             </a>
-            <a title="Boton Login" href="./mis-contactos">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Mis contactos </button>
-            </a>
           @endif
           @if (!Auth::check())
           <a title="Boton Login" href="./login">

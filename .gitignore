@@ -1,6 +1,9 @@
 /node_modules
 /public/hot
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4058fffd1c42c544822644c657e496508f9f8f00
 /storage/*.key
 /vendor
 .env.backup

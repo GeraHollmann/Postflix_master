@@ -29,7 +29,10 @@
       <li class="nav-item active">
         <a class="nav-link" href="/faqs">F.A.Q.S</a>
       </li>
+<<<<<<< HEAD
       
+=======
+>>>>>>> 4058fffd1c42c544822644c657e496508f9f8f00
       <li class="nav-item active">
         <a class="nav-link" href="/contacto">Ayuda</a>
       </li>
@@ -40,7 +43,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <!---->
+    
 
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
       <div id="middletitle" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -61,7 +64,7 @@
 
           <div id="posteador" class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                   <img src="/storage/{{$post->image}}" alt="">
+                   <img src="/storage/{{$post->image}}" alt="" height="200px">
   <!--            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
               <div class="card-body">
 

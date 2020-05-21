@@ -22,6 +22,19 @@ class ContactoController extends Controller
 
 
       $NosContacto->save();
-      return redirect('/index.php');
+      return redirect('/index');
+  }
+
+  public function reclamos(){
+    $reclamo = Contact_us::all();
+    $vac = compact('reclamo');
+    return view('/vistaReclamos', $vac);
+  }
+
+  public function borrarReclamo(Request $req){
+    $idReclamo = $req['id'];
+    $reclamo = Contact_us::find($idReclamo);
+    $reclamo->delete();
+    return redirect('/vistaReclamos');
   }
 }

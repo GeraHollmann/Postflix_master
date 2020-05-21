@@ -49,9 +49,6 @@
         <a title="Boton Mis Posts" href="./perfil">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
         </a>
-        <a title="Boton Mis Posts" href="./mis-contactos">
-          <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Contactos </button>
-        </a>
         <a title="Boton Contacto" href="./contacto">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Ayuda </button>
         </a>
