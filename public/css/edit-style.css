@@ -2,5 +2,85 @@
 body{
   background-image: url("../Imagenes/Netflix-Background.jpg");
   width: 100%;
-  
+}
+header.container{
+  display: flex;
+}
+img.logo{
+  margin-left: 12%;
+  margin-top: 12%;
+}
+.form-inline{
+  margin-left: 15%;
+  }
+h1#titulo{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  h1{
+    font-family: 'Muli', sans-serif;
+    color: #000;
+    font-weight: bold;
+    color: red;
+    font-size: 60px;
+    text-shadow: 2px 2px 1px #000;
+  }
+/* Botones */
+  button#boton.btn.btn-outline-success {
+      color: #dc3545;
+      border-color: #dc3545;
+      background-color: white;
+  }
+  button#boton.btn.btn-outline-success:hover {
+      color: white;
+      border-color: #dc3545;
+      background-color: #dc3545;
+  }
+  button#boton.btn.btn-outline-success:active {
+      color: white;
+      border-color: #dc3545;
+      background-color: #dc3545;
+      border-color: pink;
+  }
+  button#boton.btn.btn-outline-success:focus {
+      color: white;
+      border-color: #dc3545;
+      background-color: #dc3545;
+      border-color: pink;
+      box-shadow: 0 0 0 0.2rem #dc3545;
+}
+#alta{
+width: 50%;
+margin-left: 25%;
+}
+p{
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6)
+}
+button#botoncoment.btn{
+  margin-left: 33%;
+  color: #dc3545;
+  border-color: #dc3545;
+  background-color: white;
+}
+button#botoncoment.btn:hover{
+  margin-left: 33%;
+  color: white;
+  border-color: #dc3545;
+  background-color: #dc3545;
+  border-color: red;
+  box-shadow: pink;
+}
+button#botoncoment.btn:focus{
+  margin-left: 33%;
+  color: white;
+  border-color: #dc3545;
+  background-color: #dc3545;
+  border-color: red;
+  box-shadow: pink;
 }

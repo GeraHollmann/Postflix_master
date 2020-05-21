@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head >
-    <link rel="stylesheet" href="css/edit-style.css" >
+    <link rel="stylesheet" href="/css/edit-style.css" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,8 +11,8 @@
     <header class="container">
       <nav class="navbar navbar-light bg-transparent">
         <!-- LOGO -->
-        <a title="PostFlix" href="./index.php">
-          <img class="logo" src="logo.png" alt="Postflix">
+        <a title="Logo PostFlix" href="/index">
+          <img class="logo" src="/imagenes/logo.png" alt="Postflix">
         </a>
       </nav>
       <div class="form-inline  col-xs-2">
@@ -45,14 +45,14 @@
       </div>
     </header>
     <br><br>
-    <h1 id=titulo>Editar el Post!</h1>
+    <h1 id=titulo>Edita el Post!</h1>
     <br>
     <section class="container">
       <form id="alta" class="form-signin rounded-pill col-8 col-md-8 col-lg-12" action="/perfil/editarPosteo" method="post" enctype="multipart/form-data">
         {{csrf_field()}} <!--SIEMPRE DEBE ESTAR DENTRO DEL FORMULARIO-->
         <input type="hidden" name="idPosteo" value="{{$posteo->id}}">
 
-        <p id="tituloPost">Titulo del Post*</p>
+        <p id="tituloPost">Titulo del Post</p>
         <input type="text" id="inputTitulo" name="title_post" class="form-control" value="{{$posteo->title_post}}" placeholder="Ingrese el titulo del post" required autofocus="">
         <br>
         <p id="tituloPelicula">Titulo de la Pelicula/Serie </p>
@@ -86,7 +86,7 @@
         </div>
         <br>
         <br><br>
-        <button id="botoncoment" class="btn" type="submit" >Publicar Post</button>
+        <button id="botoncoment" class="btn" type="submit" >Postear!!</button>
         <br><br>
       </form>
     </section>

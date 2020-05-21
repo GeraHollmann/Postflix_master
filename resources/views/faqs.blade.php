@@ -11,7 +11,7 @@
     <div class="header">
 
       <nav>
-        <a title="PointFlix" href="./index.php">
+        <a title="PointFlix" href="/index">
           <img class="logo" src="logo.png" alt="Postflix">
         </a>
 {{-- <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button> --}}
