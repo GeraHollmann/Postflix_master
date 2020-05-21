@@ -53,7 +53,8 @@
                     <div id="unPost" class="col-lg-4">
                         {{-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"></svg> --}}
                         <div class="container">
-                          <img id=imagePost src="{{$post->image}}" alt="">
+                          {{-- /storage/{{$post->image}} me trae la subida por el usuario y {{$post->image}} me trae las faker --}}
+                          <img id=imagePost src="/storage/{{$post->image}}" alt="">
                         </div>
                         <h3 id="titulos">Pelicula/Serie:</h3><p>{{ $post->title_movie  }}</p>
                         <h3 id="titulos">Titulo del Post:</h3><p>{{ $post->title_post }}</p>
