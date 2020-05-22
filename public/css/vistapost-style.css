@@ -48,7 +48,6 @@ button#search.btn:focus {
 
 #posteos{
   width: 101%;
-  background-color: white;
   margin-top: 6%;
   overflow: hidden;
 
@@ -73,7 +72,7 @@ justify-content: center;
 
 }
 .puntua{
-  text-align: center;
+  text-align: left;
 font-size: 1.5rem;
 }
 #imagePost{
@@ -86,6 +85,15 @@ margin-left: 8%;
 }
 
 #titulos{
+  margin-top: 10px;
+  text-align: left;
+  color:#dc3545;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+#tituloCentral{
   margin-top: 10px;
   text-align: center;
   color:#dc3545;

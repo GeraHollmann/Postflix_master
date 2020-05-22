@@ -75,7 +75,7 @@
         </div>
         <br>
         <br><br>
-        <button id="botoncoment" class="btn" type="submit" >Postear!!</button>
+        <button style="margin-left:19%;" id="botoncoment" class="btn" type="submit" >Postear!!</button>
         <br><br>
       </form>
     </section>

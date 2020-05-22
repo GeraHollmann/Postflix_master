@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
       </head>
-      <body style="background-color: #C3C3A5">
+      <body style="background-color: beige">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <a href="./index.php">  <img id="postflixlogo" class="mb-4" src="logo.png" alt="" width="120" height="25"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,17 +35,15 @@
           </div>
         </nav>
 
-            <main id="posteos" role="main" class="col-md-10 ml-sm-auto col-lg-12 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-            <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
+            <main id="posteos" role="main" class="col-md-10 ml-sm-auto col-lg-12 px-4"><div class="chartjs-size-monitor" style="background-color:beige;position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+            <div class="chartjs-size-monitor-expand" style=" position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div>
             <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-            <h1 id="titulos">Reseñas de otros usuarios</h1>
-            <div class="row">
+            <h1 style="background-color: beige;" id="tituloCentral">Reseñas de otros usuarios</h1>
+            <div class="row" style="background-color:beige;">
                 {{-- SE AGREGA UN FORELSE PARA QUE TRAIGA LOS DATOS DE LA PELICULA DE LA BASE DE DATOS --}}
                 @forelse($losPosts as $post)
                     <div id="unPost" style="border-color:red" class="col-lg-4">
-                        {{-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"></svg> --}}
                         <div class="container">
-                          {{-- /storage/{{$post->image}} me trae la subida por el usuario y {{$post->image}} me trae las faker --}}
                           <img id=imagePost src="/storage/{{$post->image}}" alt="" height="200px" width="300px">
                         </div>
                         <h3 id="titulos">Pelicula/Serie:</h3><p>{{ $post->title_movie  }}</p>
@@ -57,7 +55,8 @@
                         <br>
                         <div id="divflotante" class="flotar"><h4 id="titulos">Categoria:</h4></div>
                         <div class="flotar"><p>{{$post->category->category_name}}</p></div>
-                    </div><!-- /.col-lg-4 -->
+                        <div class="flotar"><p>Creado por: {{$post->users->nickname}}</p></div>
+                    </div>
                 @empty
                     <h2>No se encontraron Posteos</h2>
                 @endforelse
