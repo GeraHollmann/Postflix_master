@@ -16,7 +16,7 @@
    text-align: center;
    text-decoration: underline;
  }
- 
+
 
  .h3,h3{font-size:1.575rem}
  .h4,h4{font-size:1.35rem}
@@ -320,7 +320,7 @@
  .custom-file-input.is-invalid~.custom-file-label:after,.was-validated .custom-file-input:invalid~.custom-file-label:after{border-color:inherit}
  .custom-file-input.is-invalid~.invalid-feedback,.custom-file-input.is-invalid~.invalid-tooltip,.was-validated .custom-file-input:invalid~.invalid-feedback,.was-validated .custom-file-input:invalid~.invalid-tooltip{display:block}
  .custom-file-input.is-invalid:focus~.custom-file-label,.was-validated .custom-file-input:invalid:focus~.custom-file-label{box-shadow:0 0 0 .rem rgba(227,52,47,.25)}
- .form-inline{display:flex;flex-flow:row wrap;align-items:center;margin-left: 35%;}
+ .form-inline{display:flex;align-items:center;margin-left: 35%;}
  .form-inline .form-check{width:100%}
  @media (min-width:576px){.form-inline label{justify-content:center}
  .form-inline .form-group,.form-inline label{display:flex;align-items:center;margin-bottom:0}

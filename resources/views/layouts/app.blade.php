@@ -25,7 +25,7 @@
         <nav class="navbar navbar-light bg-transparent">
           <!-- LOGO -->
           <a title="PostFlix" href="./index.php">
-            <img class="logo" src="logo.png" alt="Postflix">
+            <img class="logo" src="/logo.png" alt="Postflix" style="width:100%;">
           </a>
         </nav>
         <div class="form-inline  col-xs-2">
