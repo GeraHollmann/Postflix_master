@@ -34,7 +34,7 @@
           </a>
           @if (Auth::check())
             <a title="Boton Mis Posts" href="/vistapost">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
+              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Vista de Posteos </button>
             </a>
             <a title="Boton Mis Posts" href="/perfil">
               <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Perfil </button>
