@@ -1,17 +1,35 @@
 
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
+ .btn-outline-success:not(:disabled):not(.disabled):active{
+   color: white;
+   background-color: pink;
+   box-shadow: 10 10 10 10 #dc3545;
+   border-color: #dc3545;
+ }
 .btn-outline-success {
     color: #dc3545;
 
-    box-shadow: pink;
     border-color: #dc3545;
   }
+  body{
+    background-color: beige;
+  }
   #botonRojo{
-    color: red;
+    color: #dc3545;
     text-decoration: none;
-    border-color: red;
-    box-shadow: pink;
+    border-color: #dc3545;
+  }
+  #botonRojo:hover{
+    color: white;
+    text-decoration: none;
+    border-color: #dc3545;
+    background-color: #dc3545;
+  }
+  #grupobotones{
+    justify-content: center;
+  }
+  .card {
+    align-items: center;
   }
   #posteador{
     width: 100%;
@@ -19,18 +37,13 @@
     justify-content: center;
   }
   .btn-outline-success:hover {
-      color: #dc3545;
-
-      background-color: white;
+        background-color: #dc3545;
       border-color: red;
-      box-shadow: pink;
     }
     .btn-outline-success:active{
     color: white;
     background-color:black;
     border-color: red;
-
-    box-shadow: pink;
   }
     .btn-outline-success:focus {
         color: #dc3545;
@@ -65,7 +78,7 @@ h3{
   text-shadow: 2px 2px 1px #000;
 }
 #postflixlogo{
-  margin-top: 24px;
+  margin-top: 20px;
 }
 #navbarCollapse{
   margin-left: 15px;
@@ -79,7 +92,7 @@ div.row{
   justify-content: center;
 }
 img{
-  width: 100%;
+  width: 70%;
 }
 }
 .sidebar-sticky{
@@ -94,4 +107,7 @@ img{
 }
 #minititle{
   padding-top: 20px;
+}
+h5{
+  text-align: center;
 }

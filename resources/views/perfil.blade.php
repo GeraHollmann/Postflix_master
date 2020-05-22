@@ -31,7 +31,7 @@
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="/contacto">Ayuda</a>
+       <a class="nav-link" href="/contacto">Ayuda</a>
       </li>
     </ul>
       <button id="search" class="btn" type="submit"><a class="btn btn-outline-success" href="/logout">Cerrar Sesion</a></button>
@@ -51,7 +51,6 @@
 
         <h3>Mis Posteos</h3>
           <button class="btn btn-outline-success" type="submit" name="button"><a id="botonRojo" href="/altaPost">+ Crear un posteo</a></button>
-
           <br>
       </div>
 
@@ -70,14 +69,14 @@
                 <h6>{{$post->description}}</h6>
 
 
-                <div class="d-flex justify-content-between align-items-center">
+                <div id="grupobotones" class="d-flex">
                   <div class="btn-group">
                     <form class="" action="/perfil/ver/{{$post->id}}" method="post">
-                      <button type="button" class="btn btn-sm btn-outline-success"><a style="color:red;text-decoration:none;" href="/perfil/ver/{{$post->id}}">Ver</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-success"><a id="botonRojo" href="/perfil/ver/{{$post->id}}">Ver</a></button>
                     </form>
 
                     <form class="" action="/perfil/editarPosteo/{{$post->id}}" method="post">
-                      <button type="button" class="btn btn-sm btn-outline-success" value="{{$post->id}}"><a style="color:red;text-decoration:none;" href="/perfil/editarPosteo/{{$post->id}}">Editar</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-success" value="{{$post->id}}"><a id="botonRojo" href="/perfil/editarPosteo/{{$post->id}}">Editar</a></button>
                     </form>
 
 
